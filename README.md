@@ -15,7 +15,12 @@ Clique [aqui](https://www.fabricadecodigo.com/json-server/) para mais informaç�
 
 ## Técnologias utilizadas
 
-´Angular´ ´html´ ´SCSS´ ´javaScript´ ´TS´ ´bootstrap´
+´Angular´ 
+´html´ 
+´SCSS´ 
+´javaScript´ 
+´TS´ 
+´bootstrap´
 
 ## Mais informações
 
