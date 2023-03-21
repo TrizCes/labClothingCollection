@@ -1,0 +1,116 @@
+{
+  "colecoes": [
+    {
+      "idColecao": 1,
+      "nome": "Coleção 1",
+      "Responsavel": "Beatriz Ceschini",
+      "Estação": "Inverno",
+      "Marca": "Nike",
+      "Orçamento": 9500.00,
+      "Ano": 2023, 
+      "modelos": [
+        {
+          "idModelo": 1,
+          "nome": "Modelo 1",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": 1,
+          "acabamento": "Bordado"
+        },
+        {
+          "idModelo": 2,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Saia",
+          "colecao": 1,
+          "acabamento": "Estampa"
+        }
+      ]
+    },
+    {
+      "idColecao": 2,
+      "nome": "Coleção 2",
+      "responsavel": "Beatriz Ceschini",
+      "estação": "Primavera",
+      "marca": "Nike",
+      "orçamento": 9500.00,
+      "ano": 2023,
+      "modelos":[
+        {
+          "idModelo": 3,
+          "nome": "Modelo 1",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Camisa",
+          "colecao": 2,
+          "acabamento": "Bordado"
+        },
+        {
+          "idModelo": 4,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": 2,
+          "acabamento": "Bordado"
+        }
+      ]
+    },
+    {
+      "idColecao": 3,
+      "nome": "Coleção 3",
+      "responsavel": "Beatriz Ceschini",
+      "estação": "Verão",
+      "marca": "Lewis",
+      "orçamento": 5000.00,
+      "ano": 2024,
+      "modelos":[
+        {
+          "idModelo": 5,
+          "nome": "Modelo 1",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Camisa",
+          "colecao": 3,
+          "acabamento": "Bordado"
+        },
+        {
+          "idModelo": 6,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": 3,
+          "acabamento": "Bordado"
+        },
+        {
+          "idModelo": 7,
+          "nome": "Modelo 3",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bermuda",
+          "colecao": 3,
+          "acabamento": "Bordado"
+        }
+      ]
+    }
+  ],
+  "usuarios": [
+    {
+      "usuario":"Beatriz Ceschini", 
+      "empresa": "Audaces",
+      "cnpj": 46905092000192,
+      "email": "biaceschini@gmail.com",
+      "senha": "12345678"
+    },
+    {
+      "usuario":"User", 
+      "empresa": "Audaces",
+      "cnpj": 46905092000192,
+      "email": "user@email.com",
+      "senha": "12345678"
+    },
+    {
+      "usuario":"User2", 
+      "empresa": "Audaces",
+      "cnpj": 46905092000192,
+      "email": "user2@email.com",
+      "senha": "12345678"
+    }
+  ]
+}
