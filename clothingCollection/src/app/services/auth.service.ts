@@ -31,7 +31,7 @@ export class AuthService {
             this.statusLogin = true;
             window.localStorage.setItem('email', usuario.email);
             window.localStorage.setItem('statusLogin', 'true');
-            this.router.navigate(['home/dashboard']);
+            this.router.navigate(['dashboard']);
             return true;
           }
         }
