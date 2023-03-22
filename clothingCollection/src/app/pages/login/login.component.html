@@ -1,0 +1,30 @@
+<div class="d-flex flex-column justify-content-center align-items-center bg-info-subtle size_heigth gap-4">
+
+  <img class="size_img " src="../../../assets/logo_audaces.svg">
+
+  <div class="card p-4 col-lg-4 align-items-center grid row-gap-3 border border-0">
+    <div class="mb-3 text-center">
+    <h5 class="card-title ">Sign In</h5>
+    <p class="card-text">Insira suas credenciais para acessar sua conta</p>
+    </div>
+    <form class="col-12" [formGroup]="loginForm" (ngSubmit)="logar()">
+      <div class="gap-2 col">
+      <div class="mb-3">
+        <input type="email" class="form-control col" id="email" aria-describedby="email" placeholder="Informe seu email" formControlName="email">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control col" id="senha" placeholder="Informe sua senha" formControlName="senha">
+      </div>
+      <div class="mb-3" >
+        <button type="submit" class="btn btn-primary col-lg-12">Entrar</button>
+      </div>
+    </div>
+    </form>
+  </div>
+  <div class="p-2 text-center">
+    <p> Esqueceu sua senha? <a [routerLink]="['redefinirSenha']">Redefinir senha</a></p>
+    <p> Ainda não tem uma conta? <a [routerLink]="['cadastrarUsuario']">Cadastre-se</a></p>
+  </div>
+
+</div>
+
