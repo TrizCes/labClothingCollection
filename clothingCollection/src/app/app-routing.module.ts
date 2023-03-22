@@ -4,19 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { FullComponent} from './layouts/full/full.component';
 import { ContentComponent } from './layouts/content/content.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
-<<<<<<< Updated upstream
-
-const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: FullComponent, children: [
-
-  ]},
-  {path: 'login', component: ContentComponent, children:[
-
-=======
 import { LoginComponent } from './pages/login/login.component'
-import { AuthGuard } from './security/auth.guard';
 import { SenhaEsquecidaComponent } from './pages/senhaEsquecida/senha-esquecida/senha-esquecida.component';
+import { AuthGuard } from './security/auth.guard';
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
@@ -27,11 +17,8 @@ const routes: Routes = [
   {path: 'login', component: ContentComponent, children:[
     {path: '', component: LoginComponent },
     {path: 'password', component: SenhaEsquecidaComponent}
->>>>>>> Stashed changes
-  ]},
-  {path: 'not-found', component: NotFoundComponent},
-  {path: '**', redirectTo: 'not-found'}
-];
+];}
+  {path: '**', component: NotFoundComponent}
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
