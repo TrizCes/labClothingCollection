@@ -2,3 +2,19 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+.bg_color {
+  background-color: #F2F5FF;
+}
+
+p{
+  color:#abacb4;
+  font-weight: 400;
+  font-size: 16px;
+}

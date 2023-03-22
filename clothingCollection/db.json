@@ -7,7 +7,7 @@
       "Estação": "Inverno",
       "Marca": "Nike",
       "Orçamento": 9500.00,
-      "Ano": 2023, 
+      "Ano": 2023,
       "modelos": [
         {
           "idModelo": 1,
@@ -92,25 +92,25 @@
   ],
   "usuarios": [
     {
-      "usuario":"Beatriz Ceschini", 
-      "empresa": "Audaces",
-      "cnpj": 46905092000192,
       "email": "biaceschini@gmail.com",
-      "senha": "12345678"
+      "senha": "12345678",
+      "usuario":"Beatriz Ceschini",
+      "empresa": "Audaces",
+      "cnpj": 46905092000192
     },
     {
-      "usuario":"User", 
-      "empresa": "Audaces",
-      "cnpj": 46905092000192,
       "email": "user@email.com",
-      "senha": "12345678"
+      "senha": "12345678",
+      "usuario":"User",
+      "empresa": "Audaces",
+      "cnpj": 46905092000192
     },
     {
-      "usuario":"User2", 
-      "empresa": "Audaces",
-      "cnpj": 46905092000192,
       "email": "user2@email.com",
-      "senha": "12345678"
+      "senha": "12345678",
+      "usuario":"User2",
+      "empresa": "Audaces",
+      "cnpj": 46905092000192
     }
   ]
 }
