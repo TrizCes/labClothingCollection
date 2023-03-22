@@ -12,13 +12,13 @@ const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: FullComponent, canActivate: [AuthGuard],
   children: [
-
   ]},
   {path: 'login', component: ContentComponent, children:[
     {path: '', component: LoginComponent },
     {path: 'password', component: SenhaEsquecidaComponent}
-];}
+  ]},
   {path: '**', component: NotFoundComponent}
+  ]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
