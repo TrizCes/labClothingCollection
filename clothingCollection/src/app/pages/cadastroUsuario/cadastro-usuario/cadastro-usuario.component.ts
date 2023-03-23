@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormControl, ValidatorFn } from '@angular/forms';
-import { Router } from '@angular/router';
+import { FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
+import { IUsuario } from 'src/app/interfaces/usuario';
+import { CadastroUsuarioService } from 'src/app/services/cadastro-usuario.service';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -12,15 +13,17 @@ export class CadastroUsuarioComponent implements OnInit {
 
   cadastroForm!: FormGroup;
   senhasDiferentes!: boolean;
+  id!: number;
 
-  constructor (private _router: Router, private _fb: FormBuilder){}
+  constructor (private _fb: FormBuilder, private _cadUsuarioServ: CadastroUsuarioService){}
 
   ngOnInit(): void {
-    this.criarNovoUsuario();
+      this.criarNovoUsuario();
   };
 
   criarNovoUsuario(): void {
     this.cadastroForm = new FormGroup ({
+      id: new FormControl (this.id),
       usuario: new FormControl ('', [Validators.required]),
       empresa: new FormControl ('', [Validators.required]),
       email: new FormControl('', [Validators.required, Validators.email]),
@@ -30,16 +33,21 @@ export class CadastroUsuarioComponent implements OnInit {
     });
   }
 
-  cadastrar(){
-    console.log(this.cadastroForm.value);
-    if(!this.cadastroForm.valid){
-      alert('Dados invalidos, tente novamente')
-      return
-    } else if(this.cadastroForm.value.senha != this.cadastroForm.value.confirmeSenha){
-      this.senhasDiferentes = true;
-      return
-    }
-    console.log("cheguei aqui");
+  criarID(): number {
+    return this.id = Math.round((Math.random() * 10000));
+  }
 
+  cadastrar(){
+  this.criarID();
+  if(!this.cadastroForm.valid){
+    alert('Dados invalidos, tente novamente')
+    return
+  } else if(this.cadastroForm.value.senha != this.cadastroForm.value.confirmeSenha){
+    this.senhasDiferentes = true;
+    return
+  }
+
+  const usuario : IUsuario[] = this.cadastroForm.value
+  this._cadUsuarioServ.novoCadastro(usuario)
   }
 }
