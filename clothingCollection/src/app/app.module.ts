@@ -7,14 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { FullComponent } from './layouts/full/full.component';
 import { ContentComponent } from './layouts/content/content.component';
 import { NotFoundComponent } from './component/not-found/not-found.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SenhaEsquecidaComponent } from './pages/senhaEsquecida/senha-esquecida/senha-esquecida.component';
+import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuario/cadastro-usuario.component';
 
 import { AuthService } from './services/auth.service';
-import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuario/cadastro-usuario.component';
+import { CadastroUsuarioService } from './services/cadastro-usuario.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,7 @@ import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuar
     FormsModule,
     HttpClientModule
   ],
-  providers: [AuthService, HttpClientModule],
+  providers: [AuthService, HttpClientModule, CadastroUsuarioService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

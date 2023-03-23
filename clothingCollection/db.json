@@ -6,7 +6,7 @@
       "Responsavel": "Beatriz Ceschini",
       "Estação": "Inverno",
       "Marca": "Nike",
-      "Orçamento": 9500.00,
+      "Orçamento": 9500,
       "Ano": 2023,
       "modelos": [
         {
@@ -33,9 +33,9 @@
       "responsavel": "Beatriz Ceschini",
       "estação": "Primavera",
       "marca": "Nike",
-      "orçamento": 9500.00,
+      "orçamento": 9500,
       "ano": 2023,
-      "modelos":[
+      "modelos": [
         {
           "idModelo": 3,
           "nome": "Modelo 1",
@@ -60,9 +60,9 @@
       "responsavel": "Beatriz Ceschini",
       "estação": "Verão",
       "marca": "Lewis",
-      "orçamento": 5000.00,
+      "orçamento": 5000,
       "ano": 2024,
-      "modelos":[
+      "modelos": [
         {
           "idModelo": 5,
           "nome": "Modelo 1",
@@ -92,25 +92,49 @@
   ],
   "usuarios": [
     {
+      "id": 9164,
+      "usuario": "Beatriz Ceschini",
+      "empresa": "Audaces",
       "email": "biaceschini@gmail.com",
       "senha": "12345678",
-      "usuario":"Beatriz Ceschini",
-      "empresa": "Audaces",
-      "cnpj": 46905092000192
+      "confirmeSenha": "12345678",
+      "cnpj": 46466902000192
     },
     {
+      "id": 9165,
+      "usuario": "User",
+      "empresa": "Audaces",
       "email": "user@email.com",
       "senha": "12345678",
-      "usuario":"User",
-      "empresa": "Audaces",
-      "cnpj": 46905092000192
+      "confirmeSenha": "12345678",
+      "cnpj": 46468777000177
     },
     {
+      "id": 9166,
+      "usuario": "User2",
+      "empresa": "Audaces",
       "email": "user2@email.com",
       "senha": "12345678",
-      "usuario":"User2",
+      "confirmeSenha": "12345678",
+      "cnpj": 46468703000133
+    },
+    {
+      "id": 9167,
+      "usuario": "User3",
       "empresa": "Audaces",
-      "cnpj": 46905092000192
+      "email": "user3@email.com",
+      "senha": "12345678",
+      "confirmeSenha": "12345678",
+      "cnpj": 48488705000175
+    },
+    {
+      "id": 9168,
+      "usuario": "User4",
+      "empresa": "Audaces",
+      "email": "user4@email.com",
+      "senha": "12345678",
+      "confirmeSenha": "12345678",
+      "cnpj": 45455804000184
     }
   ]
 }
