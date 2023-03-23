@@ -14,6 +14,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SenhaEsquecidaComponent } from './pages/senhaEsquecida/senha-esquecida/senha-esquecida.component';
 
 import { AuthService } from './services/auth.service';
+import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuario/cadastro-usuario.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { AuthService } from './services/auth.service';
     NotFoundComponent,
     LoginComponent,
     SenhaEsquecidaComponent,
+    CadastroUsuarioComponent,
   ],
   imports: [
     BrowserModule,
