@@ -20,6 +20,8 @@ import { AuthService } from './services/auth.service';
 import { CadastroUsuarioService } from './services/cadastro-usuario.service';
 import { MenuComponent } from './component/menu/menu/menu.component';
 import { HeaderComponent } from './component/header/header/header.component';
+import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +34,8 @@ import { HeaderComponent } from './component/header/header/header.component';
     CadastroUsuarioComponent,
     MenuComponent,
     HeaderComponent,
+    DashboardComponent,
+
   ],
   imports: [
     BrowserModule,
