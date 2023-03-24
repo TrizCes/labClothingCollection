@@ -6,7 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 import { FullComponent } from './layouts/full/full.component';
 import { ContentComponent } from './layouts/content/content.component';
@@ -18,11 +19,9 @@ import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuar
 import { AuthService } from './services/auth.service';
 import { CadastroUsuarioService } from './services/cadastro-usuario.service';
 import { MenuComponent } from './component/menu/menu/menu.component';
-<<<<<<< Updated upstream
-=======
 import { HeaderComponent } from './component/header/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
->>>>>>> Stashed changes
+
 
 @NgModule({
   declarations: [
@@ -34,11 +33,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.compon
     SenhaEsquecidaComponent,
     CadastroUsuarioComponent,
     MenuComponent,
-<<<<<<< Updated upstream
-=======
     HeaderComponent,
     DashboardComponent,
->>>>>>> Stashed changes
+
   ],
   imports: [
     BrowserModule,
@@ -46,9 +43,10 @@ import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.compon
     NgbModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbDropdownModule,
   ],
-  providers: [AuthService, HttpClientModule, CadastroUsuarioService],
+  providers: [AuthService, HttpClientModule, CadastroUsuarioService, NgbDropdownModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
