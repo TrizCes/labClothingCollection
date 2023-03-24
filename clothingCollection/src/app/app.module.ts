@@ -6,7 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
+
 
 import { FullComponent } from './layouts/full/full.component';
 import { ContentComponent } from './layouts/content/content.component';
@@ -18,6 +19,7 @@ import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuar
 import { AuthService } from './services/auth.service';
 import { CadastroUsuarioService } from './services/cadastro-usuario.service';
 import { MenuComponent } from './component/menu/menu/menu.component';
+import { HeaderComponent } from './component/header/header/header.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { MenuComponent } from './component/menu/menu/menu.component';
     SenhaEsquecidaComponent,
     CadastroUsuarioComponent,
     MenuComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,9 +39,10 @@ import { MenuComponent } from './component/menu/menu/menu.component';
     NgbModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbDropdownModule,
   ],
-  providers: [AuthService, HttpClientModule, CadastroUsuarioService],
+  providers: [AuthService, HttpClientModule, CadastroUsuarioService, NgbDropdownModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

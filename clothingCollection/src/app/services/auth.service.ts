@@ -43,5 +43,11 @@ export class AuthService {
       return false;
     };
   };
+
+  logout(){
+    console.log("logout");
+    window.localStorage.clear();
+    this.router.navigate(['login']);
+  }
 }
 
