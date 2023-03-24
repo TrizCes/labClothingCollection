@@ -17,6 +17,7 @@ import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuar
 
 import { AuthService } from './services/auth.service';
 import { CadastroUsuarioService } from './services/cadastro-usuario.service';
+import { MenuComponent } from './component/menu/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CadastroUsuarioService } from './services/cadastro-usuario.service';
     LoginComponent,
     SenhaEsquecidaComponent,
     CadastroUsuarioComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
