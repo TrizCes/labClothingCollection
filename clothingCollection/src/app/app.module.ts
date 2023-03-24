@@ -18,6 +18,11 @@ import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuar
 import { AuthService } from './services/auth.service';
 import { CadastroUsuarioService } from './services/cadastro-usuario.service';
 import { MenuComponent } from './component/menu/menu/menu.component';
+<<<<<<< Updated upstream
+=======
+import { HeaderComponent } from './component/header/header/header.component';
+import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
+>>>>>>> Stashed changes
 
 @NgModule({
   declarations: [
@@ -29,6 +34,11 @@ import { MenuComponent } from './component/menu/menu/menu.component';
     SenhaEsquecidaComponent,
     CadastroUsuarioComponent,
     MenuComponent,
+<<<<<<< Updated upstream
+=======
+    HeaderComponent,
+    DashboardComponent,
+>>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule,
