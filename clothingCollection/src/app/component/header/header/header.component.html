@@ -1,0 +1,15 @@
+<header class="card col-12  d-flex flex-row-reverse lign-self-lg-end text-emphasis-light border-0">
+  <ul class="nav nav-pills bg-light-subtle align-items-center">
+    <li class="nav-item">
+      <a class="nav-link" aria-current="page"><img src="../../../../assets/Ícone_bell.svg" ></a>
+    </li>
+    <li ngbDropdown class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" ngbDropdownToggle id="nav-menu" data-bs-toggle="dropdown" role="button" aria-expanded="false"><img class="avatar" src="https://avatars.githubusercontent.com/u/115851354?s=96&v=4"></a>
+      <div ngbDropdownMenu aria-labelledby="nav-menu">
+				<button ngbDropdownItem> <img src="../../../../assets/perfil_icone.svg"> Conta</button>
+				<button ngbDropdownItem> <img src="../../../../assets/confi_icon.svg"> Configurações</button>
+				<button ngbDropdownItem (click)="sair()"> <img src="../../../../assets/sair_icone.svg"> Sair </button>
+			</div>
+    </li>
+  </ul>
+</header>
