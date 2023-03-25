@@ -21,6 +21,8 @@ import { CadastroUsuarioService } from './services/cadastro-usuario.service';
 import { MenuComponent } from './component/menu/menu/menu.component';
 import { HeaderComponent } from './component/header/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
+import { CardColecaoComponent } from './component/card-colecao/card-colecao/card-colecao.component';
+import { ColecoesService } from './services/colecoes.service';
 
 
 @NgModule({
@@ -35,6 +37,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.compon
     MenuComponent,
     HeaderComponent,
     DashboardComponent,
+    CardColecaoComponent,
 
   ],
   imports: [
@@ -46,7 +49,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.compon
     HttpClientModule,
     NgbDropdownModule,
   ],
-  providers: [AuthService, HttpClientModule, CadastroUsuarioService, NgbDropdownModule],
+  providers: [AuthService, HttpClientModule, CadastroUsuarioService, NgbDropdownModule, ColecoesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

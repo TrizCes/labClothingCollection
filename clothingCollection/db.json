@@ -1,7 +1,7 @@
 {
   "colecoes": [
     {
-      "idColecao": 1,
+      "id": 1,
       "nome": "Coleção 1",
       "Responsavel": "Beatriz Ceschini",
       "Estação": "Inverno",
@@ -10,7 +10,7 @@
       "Ano": 2023,
       "modelos": [
         {
-          "idModelo": 1,
+          "id": 1,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
@@ -18,7 +18,7 @@
           "acabamento": "Bordado"
         },
         {
-          "idModelo": 2,
+          "id": 2,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Saia",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "idColecao": 2,
+      "id": 2,
       "nome": "Coleção 2",
       "responsavel": "Beatriz Ceschini",
       "estação": "Primavera",
@@ -37,7 +37,7 @@
       "ano": 2023,
       "modelos": [
         {
-          "idModelo": 3,
+          "id": 3,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
@@ -45,7 +45,7 @@
           "acabamento": "Bordado"
         },
         {
-          "idModelo": 4,
+          "id": 4,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
@@ -55,7 +55,7 @@
       ]
     },
     {
-      "idColecao": 3,
+      "id": 3,
       "nome": "Coleção 3",
       "responsavel": "Beatriz Ceschini",
       "estação": "Verão",
@@ -64,7 +64,7 @@
       "ano": 2024,
       "modelos": [
         {
-          "idModelo": 5,
+          "id": 5,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
@@ -72,7 +72,7 @@
           "acabamento": "Bordado"
         },
         {
-          "idModelo": 6,
+          "id": 6,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
@@ -80,7 +80,7 @@
           "acabamento": "Bordado"
         },
         {
-          "idModelo": 7,
+          "id": 7,
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
