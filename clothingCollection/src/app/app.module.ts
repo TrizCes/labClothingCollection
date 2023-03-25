@@ -23,6 +23,7 @@ import { HeaderComponent } from './component/header/header/header.component';
 import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
 import { CardColecaoComponent } from './component/card-colecao/card-colecao/card-colecao.component';
 import { ColecoesService } from './services/colecoes.service';
+import { CardModelosComponent } from './component/card-modelos/card-modelos/card-modelos.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ColecoesService } from './services/colecoes.service';
     HeaderComponent,
     DashboardComponent,
     CardColecaoComponent,
+    CardModelosComponent,
 
   ],
   imports: [
