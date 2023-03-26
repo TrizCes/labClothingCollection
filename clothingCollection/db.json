@@ -2,8 +2,8 @@
   "colecoes": [
     {
       "id": 1,
-      "nome": "Coleção 1",
-      "Responsavel": "Beatriz Ceschini",
+      "nome": "Zamioculca",
+      "responsavel": "Beatriz Ceschini",
       "Estação": "Inverno",
       "Marca": "Nike",
       "orcamento": 9500,
@@ -29,11 +29,11 @@
     },
     {
       "id": 2,
-      "nome": "Coleção 2",
+      "nome": "Peperômia",
       "responsavel": "Beatriz Ceschini",
       "estação": "Primavera",
       "marca": "Nike",
-      "orcamento": 9500,
+      "orcamento": 10500,
       "ano": 2023,
       "modelos": [
         {
@@ -56,7 +56,7 @@
     },
     {
       "id": 3,
-      "nome": "Coleção 3",
+      "nome": "Hera",
       "responsavel": "Beatriz Ceschini",
       "estação": "Verão",
       "marca": "Lewis",
@@ -85,6 +85,111 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
           "colecao": 3,
+          "acabamento": "Bordado"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Salvia",
+      "responsavel": "Beatriz Ceschini",
+      "estação": "Verão",
+      "marca": "Lewis",
+      "orcamento": 9000,
+      "ano": 2024,
+      "modelos": [
+        {
+          "id": 5,
+          "nome": "Modelo 1",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Camisa",
+          "colecao": 4,
+          "acabamento": "Bordado"
+        },
+        {
+          "id": 6,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": 4,
+          "acabamento": "Bordado"
+        },
+        {
+          "id": 7,
+          "nome": "Modelo 3",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bermuda",
+          "colecao": 4,
+          "acabamento": "Bordado"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Cravo",
+      "responsavel": "Beatriz Ceschini",
+      "estação": "Verão",
+      "marca": "Lewis",
+      "orcamento": 7000,
+      "ano": 2024,
+      "modelos": [
+        {
+          "id": 5,
+          "nome": "Modelo 1",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Camisa",
+          "colecao": 5,
+          "acabamento": "Bordado"
+        },
+        {
+          "id": 6,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": 5,
+          "acabamento": "Bordado"
+        },
+        {
+          "id": 7,
+          "nome": "Modelo 3",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bermuda",
+          "colecao": 5,
+          "acabamento": "Bordado"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "nome": "Violeta",
+      "responsavel": "Beatriz Ceschini",
+      "estação": "Verão",
+      "marca": "Lewis",
+      "orcamento": 6870,
+      "ano": 2024,
+      "modelos": [
+        {
+          "id": 5,
+          "nome": "Modelo 1",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Camisa",
+          "colecao": 6,
+          "acabamento": "Bordado"
+        },
+        {
+          "id": 6,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": 6,
+          "acabamento": "Bordado"
+        },
+        {
+          "id": 7,
+          "nome": "Modelo 3",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bermuda",
+          "colecao": 6,
           "acabamento": "Bordado"
         }
       ]

@@ -11,6 +11,7 @@ import { IColecoes } from '../interfaces/colecoes';
 })
 export class ColecoesService {
   public numero!: number;
+
   constructor(private _httpClient: HttpClient) {}
 
   listaColecoes(): Observable<IColecoes[]> {
@@ -26,6 +27,17 @@ export class ColecoesService {
       }
     } catch (e) {
       return this.numero;
+    }
+  }
+
+  async obterColecoes(): Promise< IColecoes[] | any >{
+    try{
+      const colecoes = await this.listaColecoes().toPromise();
+      if(colecoes){
+        return colecoes
+      }
+    } catch (err){
+      return;
     }
   }
 }
