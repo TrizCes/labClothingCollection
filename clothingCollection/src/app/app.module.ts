@@ -24,6 +24,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.compon
 import { CardColecaoComponent } from './component/card-colecao/card-colecao/card-colecao.component';
 import { ColecoesService } from './services/colecoes.service';
 import { CardModelosComponent } from './component/card-modelos/card-modelos/card-modelos.component';
+import { CardOrcamentoMedioComponent } from './component/card-orcamentoMedio/card-orcamento-medio/card-orcamento-medio.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { CardModelosComponent } from './component/card-modelos/card-modelos/card
     DashboardComponent,
     CardColecaoComponent,
     CardModelosComponent,
+    CardOrcamentoMedioComponent,
 
   ],
   imports: [

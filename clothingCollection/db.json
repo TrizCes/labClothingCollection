@@ -6,7 +6,7 @@
       "Responsavel": "Beatriz Ceschini",
       "Estação": "Inverno",
       "Marca": "Nike",
-      "Orçamento": 9500,
+      "orcamento": 9500,
       "Ano": 2023,
       "modelos": [
         {
@@ -33,7 +33,7 @@
       "responsavel": "Beatriz Ceschini",
       "estação": "Primavera",
       "marca": "Nike",
-      "orçamento": 9500,
+      "orcamento": 9500,
       "ano": 2023,
       "modelos": [
         {
@@ -60,7 +60,7 @@
       "responsavel": "Beatriz Ceschini",
       "estação": "Verão",
       "marca": "Lewis",
-      "orçamento": 5000,
+      "orcamento": 5000,
       "ano": 2024,
       "modelos": [
         {
