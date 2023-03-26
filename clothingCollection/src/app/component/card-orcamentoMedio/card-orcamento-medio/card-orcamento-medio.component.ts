@@ -16,6 +16,8 @@ export class CardOrcamentoMedioComponent {
   }
 
   pegaOrcamentoM() {
-    return this._orcamentoService.contaTotal().then((a) => (this.total = a)).catch((e) => console.log(e));
+    return this._orcamentoService.contaTotal().then((a) => {
+      this.total = Math.round(a);
+    }).catch((e) => console.log(e));
   }
 }
