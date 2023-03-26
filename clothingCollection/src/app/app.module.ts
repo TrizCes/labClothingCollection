@@ -26,6 +26,7 @@ import { ColecoesService } from './services/colecoes.service';
 import { CardModelosComponent } from './component/card-modelos/card-modelos/card-modelos.component';
 import { CardOrcamentoMedioComponent } from './component/card-orcamentoMedio/card-orcamento-medio/card-orcamento-medio.component';
 import { MaioresOrcamentosComponent } from './component/tab-maiores-orcamentos/maiores-orcamentos/maiores-orcamentos.component';
+import { ListaColecoesComponent } from './pages/colecoes/lista-colecoes/lista-colecoes.component';
 
 
 @NgModule({
@@ -44,7 +45,7 @@ import { MaioresOrcamentosComponent } from './component/tab-maiores-orcamentos/m
     CardModelosComponent,
     CardOrcamentoMedioComponent,
     MaioresOrcamentosComponent,
-
+    ListaColecoesComponent,
   ],
   imports: [
     BrowserModule,

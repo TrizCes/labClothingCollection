@@ -10,12 +10,15 @@ import { LoginComponent } from './pages/login/login.component'
 import { SenhaEsquecidaComponent } from './pages/senhaEsquecida/senha-esquecida/senha-esquecida.component';
 import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuario/cadastro-usuario.component';
 import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
+import { ListaColecoesComponent } from './pages/colecoes/lista-colecoes/lista-colecoes.component';
+
 
 const routes: Routes = [
   {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
-  {path: 'dashboard', component: FullComponent, canActivate: [AuthGuard],
+  {path: '', component: FullComponent, canActivate: [AuthGuard],
   children: [
-    {path: '', component: DashboardComponent}
+    {path: 'dashboard', component: DashboardComponent},
+    {path: 'colecoes', component: ListaColecoesComponent}
   ]},
   {path: 'login', component: ContentComponent, children:[
     {path: '', component: LoginComponent },
