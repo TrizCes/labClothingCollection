@@ -11,6 +11,7 @@ import { SenhaEsquecidaComponent } from './pages/senhaEsquecida/senha-esquecida/
 import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuario/cadastro-usuario.component';
 import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
 import { ListaColecoesComponent } from './pages/colecoes/lista-colecoes/lista-colecoes.component';
+import { CriarColecaoComponent } from './pages/criar-colecao/criar-colecao/criar-colecao.component';
 
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path: '', component: FullComponent, canActivate: [AuthGuard],
   children: [
     {path: 'dashboard', component: DashboardComponent},
-    {path: 'colecoes', component: ListaColecoesComponent}
+    {path: 'colecoes', component: ListaColecoesComponent},
+    {path: 'colecoes/edit/:id', component:CriarColecaoComponent}
   ]},
   {path: 'login', component: ContentComponent, children:[
     {path: '', component: LoginComponent },

@@ -45,7 +45,7 @@ export class TabColecoesComponent implements OnInit {
           const tr = document.createElement("tr");
           tr.id = `${this.id}`;
           tr.addEventListener('click', () => {
-            this._router.navigate([`/edit-colecao/:id`])
+            this._router.navigate([`colecoes/edit/:id`])
           });
 
           const td1 = document.createElement("td");
