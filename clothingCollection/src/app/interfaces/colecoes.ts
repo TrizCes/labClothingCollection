@@ -4,7 +4,7 @@ export interface IColecoes{
   responsavel: string;
   estacao: string;
   marca: string;
-  orcamento: string;
+  orcamento: number;
   ano: number;
   modelos: string[];
 }
