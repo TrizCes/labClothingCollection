@@ -193,6 +193,46 @@
           "acabamento": "Bordado"
         }
       ]
+    },
+    {
+      "id": 971,
+      "nome": "Sun",
+      "responsavel": "Beatriz ",
+      "marca": "Live!",
+      "estacao": "Outono",
+      "ano": 2023,
+      "orcamento": 20650,
+      "modelos": []
+    },
+    {
+      "id": 521,
+      "nome": "Moon",
+      "responsavel": "Beatriz ",
+      "marca": "Adidas",
+      "estacao": "Inverno",
+      "ano": 2023,
+      "orcamento": 65742,
+      "modelos": []
+    },
+    {
+      "id": 711,
+      "nome": "Ballet",
+      "responsavel": "Beatriz",
+      "marca": "Triz",
+      "estacao": "Outono",
+      "ano": 2024,
+      "orcamento": 6900,
+      "modelos": []
+    },
+    {
+      "id": 321,
+      "nome": "Wood",
+      "responsavel": "Beatriz",
+      "marca": "Janfer",
+      "estacao": "Inverno",
+      "ano": 2024,
+      "orcamento": 4600,
+      "modelos": []
     }
   ],
   "usuarios": [

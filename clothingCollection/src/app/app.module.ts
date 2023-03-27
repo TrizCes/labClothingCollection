@@ -29,6 +29,7 @@ import { MaioresOrcamentosComponent } from './component/tab-maiores-orcamentos/m
 import { ListaColecoesComponent } from './pages/colecoes/lista-colecoes/lista-colecoes.component';
 import { TabColecoesComponent } from './component/tab-colecoes/tab-colecoes.component';
 import { CriarColecaoComponent } from './pages/criar-colecao/criar-colecao/criar-colecao.component';
+import { FormColecaoComponent } from './component/form-colecao/form-colecao/form-colecao.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { CriarColecaoComponent } from './pages/criar-colecao/criar-colecao/criar
     ListaColecoesComponent,
     TabColecoesComponent,
     CriarColecaoComponent,
+    FormColecaoComponent,
   ],
   imports: [
     BrowserModule,
