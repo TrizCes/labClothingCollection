@@ -1,15 +1,22 @@
 <section class="p-4">
-    <table class="table table-sm table-hover">
-      <thead>
-        <tr>
-          <th scope="col">Coleção</th>
-          <th scope="col">Resposável</th>
-          <th scope="col">Estação | Lançamento</th>
-          <th scope="col">Modelos</th>
-          <th scope="col">Orçamentos</th>
-        </tr>
-      </thead>
-      <tbody id="tbody">
-      </tbody>
-    </table>
+  <table class="table table-sm table-hover" *ngIf="colecoes">
+    <thead>
+      <tr>
+        <th scope="col">Coleção</th>
+        <th scope="col">Resposável</th>
+        <th scope="col">Estação | Lançamento</th>
+        <th scope="col">Modelos</th>
+        <th scope="col">Orçamentos</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let colecao of colecoes" id="tbody">
+      <tr (click)="editaColecao(colecao)">
+        <td>{{ colecao.nome }}</td>
+        <td>{{ colecao.responsavel }}</td>
+        <td>{{ colecao.estacao }} {{ colecao.ano }}</td>
+        <td>{{ colecao.modelos.length }}</td>
+        <td>{{ colecao.orcamento }}</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
