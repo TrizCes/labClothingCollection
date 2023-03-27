@@ -40,4 +40,11 @@ export class ColecoesService {
       return;
     }
   }
+
+  cadastrarColecao(colecao: IColecoes): void{
+    console.log(colecao);
+    this._httpClient.post<IColecoes>(`${API_PATH}/colecoes`, colecao).subscribe(
+      () => {console.log('Success'), window.alert('Cadastro de coleção realizado!')},
+      (error: any) => console.error('Error:', error));
+  }
 }
