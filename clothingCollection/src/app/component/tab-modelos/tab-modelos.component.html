@@ -1,0 +1,20 @@
+<section class="p-4">
+  <table class="table table-sm table-hover" *ngIf="modelos">
+    <thead>
+      <tr>
+        <th scope="col">Modelo ID</th>
+        <th scope="col">Nome do Modelo</th>
+        <th scope="col">Responsável</th>
+        <th scope="col">Coleção</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let modelo of modelos" id="tbody">
+      <tr (click)="editaModelos(modelo)">
+        <td>{{ modelo.id }}</td>
+        <td>{{ modelo.nome }}</td>
+        <td>{{ modelo.responsavel }}</td>
+        <td>{{ modelo.colecao }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

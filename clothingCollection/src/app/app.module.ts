@@ -30,6 +30,8 @@ import { ListaColecoesComponent } from './pages/colecoes/lista-colecoes/lista-co
 import { TabColecoesComponent } from './component/tab-colecoes/tab-colecoes.component';
 import { CriarColecaoComponent } from './pages/criar-colecao/criar-colecao/criar-colecao.component';
 import { FormColecaoComponent } from './component/form-colecao/form-colecao/form-colecao.component';
+import { ModelosComponent } from './pages/modelos/modelos.component';
+import { TabModelosComponent } from './component/tab-modelos/tab-modelos.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { FormColecaoComponent } from './component/form-colecao/form-colecao/form
     TabColecoesComponent,
     CriarColecaoComponent,
     FormColecaoComponent,
+    ModelosComponent,
+    TabModelosComponent,
 
   ],
   imports: [

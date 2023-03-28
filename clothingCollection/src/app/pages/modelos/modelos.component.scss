@@ -1,0 +1,22 @@
+.hero{
+  width: 80vw;
+  padding: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+
+@media  screen and (max-width:960px) {
+  .me_small{
+    margin-right: 0 !important;
+  }
+
+  .small_screen{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .small_item{
+    width: 90%;
+  }
+
+}
