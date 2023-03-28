@@ -14,7 +14,7 @@
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 1,
+          "colecao": "Zamioculca",
           "acabamento": "Bordado"
         },
         {
@@ -22,7 +22,7 @@
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Saia",
-          "colecao": 1,
+          "colecao": "Zamioculca",
           "acabamento": "Estampa"
         }
       ]
@@ -41,7 +41,7 @@
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 2,
+          "colecao": "Peperômia",
           "acabamento": "Bordado"
         },
         {
@@ -49,7 +49,7 @@
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 2,
+          "colecao": "Peperômia",
           "acabamento": "Bordado"
         }
       ]
@@ -68,7 +68,7 @@
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 3,
+          "colecao": "Hera",
           "acabamento": "Bordado"
         },
         {
@@ -76,7 +76,7 @@
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 3,
+          "colecao": "Hera",
           "acabamento": "Bordado"
         },
         {
@@ -84,7 +84,7 @@
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 3,
+          "colecao": "Hera",
           "acabamento": "Bordado"
         }
       ]
@@ -103,7 +103,7 @@
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 4,
+          "colecao": "Salvia",
           "acabamento": "Bordado"
         },
         {
@@ -111,7 +111,7 @@
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 4,
+          "colecao": "Salvia",
           "acabamento": "Bordado"
         },
         {
@@ -119,7 +119,7 @@
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 4,
+          "colecao": "Salvia",
           "acabamento": "Bordado"
         }
       ]
@@ -138,7 +138,7 @@
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 5,
+          "colecao": "Cravo",
           "acabamento": "Bordado"
         },
         {
@@ -146,7 +146,7 @@
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 5,
+          "colecao": "Cravo",
           "acabamento": "Bordado"
         },
         {
@@ -154,7 +154,7 @@
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 5,
+          "colecao": "Cravo",
           "acabamento": "Bordado"
         }
       ]
@@ -173,7 +173,7 @@
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 6,
+          "colecao": "Violeta",
           "acabamento": "Bordado"
         },
         {
@@ -181,7 +181,7 @@
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 6,
+          "colecao": "Violeta",
           "acabamento": "Bordado"
         },
         {
@@ -189,7 +189,7 @@
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 6,
+          "colecao": "Violeta",
           "acabamento": "Bordado"
         }
       ]
