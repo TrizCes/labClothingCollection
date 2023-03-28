@@ -52,6 +52,7 @@ import { FormColecaoComponent } from './component/form-colecao/form-colecao/form
     TabColecoesComponent,
     CriarColecaoComponent,
     FormColecaoComponent,
+
   ],
   imports: [
     BrowserModule,

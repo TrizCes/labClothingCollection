@@ -1,6 +1,8 @@
 import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { IColecoes } from 'src/app/interfaces/colecoes';
+
 
 
 @Component({
@@ -11,9 +13,19 @@ import { Router } from '@angular/router';
 export class FormColecaoComponent implements OnInit {
 
   colecaoForm!: FormGroup;
+  colecao!: IColecoes;
   id!: number;
+  nome!: string;
+  responsavel!: string;
+  estacao!: string;
+  marca!: string;
+  orcamento!: number;
+  ano!: number;
+  modelos: any[] = [];
+  editaColecao: boolean = false;
 
   @Output('salvaColecao') salvaColecao = new EventEmitter<FormGroup>();
+  @Output('atualizaColecao') atualizaColecao = new EventEmitter<FormGroup>();
 
   constructor(private _router : Router){};
 
@@ -22,8 +34,9 @@ export class FormColecaoComponent implements OnInit {
   }
 
   cadastroColecao(): void{
-    this.criarID();
-    const modelos: any[] = [];
+    if(!this.editaColecao){
+      this.criarID();
+    }
     this.colecaoForm = new FormGroup ({
       id: new FormControl (this.id, [Validators.required]),
       nome: new FormControl ('', [Validators.required]),
@@ -32,7 +45,7 @@ export class FormColecaoComponent implements OnInit {
       estacao: new FormControl ('', [Validators.required]),
       ano: new FormControl (Number, [Validators.required, Validators.minLength(4)]),
       orcamento: new FormControl ( Number, [Validators.required]),
-      modelos: new FormControl (modelos)
+      modelos: new FormControl (this.modelos)
     });
   }
 
@@ -42,7 +55,6 @@ export class FormColecaoComponent implements OnInit {
       return
     }
     this.salvaColecao.emit(this.colecaoForm);
-    window.alert('Coleção enviada!');
     setTimeout(() => {
       this._router.navigate(['../colecoes'])
     }, 250);
@@ -52,4 +64,33 @@ export class FormColecaoComponent implements OnInit {
   criarID(): number {
     return this.id = Math.round((Math.random() * 1000));
   }
+
+  completaForm(colecaoAtual : any):void{
+    this.editaColecao = true;
+    try{
+      this.id = colecaoAtual.id;
+      this.colecaoForm.get(['id'])?.setValue(this.id);
+      this.colecaoForm.get(['nome'])?.setValue(colecaoAtual.nome);
+      this.colecaoForm.get(['responsavel'])?.setValue(colecaoAtual.responsavel);
+      this.colecaoForm.get(['marca'])?.setValue(colecaoAtual.marca);
+      this.colecaoForm.get(['estacao'])?.setValue(colecaoAtual.estacao);
+      this.colecaoForm.get(['orcamento'])?.setValue(colecaoAtual.orcamento);
+      this.colecaoForm.get(['ano'])?.setValue(colecaoAtual.ano);
+      this.colecaoForm.get(['modelos'])?.setValue(colecaoAtual.modelos);
+    }catch{
+      window.alert('Erro ao carregar');
+    }
+  }
+
+  atualiza(){
+    if(!this.colecaoForm.valid){
+      alert('Erro, entre em contato com o suporte 0800-999-999')
+      return
+    }
+    this.atualizaColecao.emit(this.colecaoForm);
+    setTimeout(() => {
+      this._router.navigate(['../colecoes'])
+    }, 400); //tempo para atualizar o db.json
+  }
+
 }

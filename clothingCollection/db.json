@@ -5,7 +5,7 @@
       "nome": "Zamioculca",
       "responsavel": "Beatriz Ceschini",
       "estacao": "Inverno",
-      "Marca": "Nike",
+      "marca": "Nike",
       "orcamento": 9500,
       "ano": 2023,
       "modelos": [
@@ -31,10 +31,10 @@
       "id": 2,
       "nome": "Peperômia",
       "responsavel": "Beatriz Ceschini",
-      "estacao": "Primavera",
       "marca": "Nike",
+      "estacao": "Primavera",
+      "ano": 2024,
       "orcamento": 10500,
-      "ano": 2023,
       "modelos": [
         {
           "id": 3,
@@ -195,43 +195,43 @@
       ]
     },
     {
-      "id": 971,
-      "nome": "Sun",
-      "responsavel": "Beatriz ",
-      "marca": "Live!",
-      "estacao": "Outono",
-      "ano": 2023,
-      "orcamento": 20650,
-      "modelos": []
-    },
-    {
-      "id": 521,
-      "nome": "Moon",
-      "responsavel": "Beatriz ",
-      "marca": "Adidas",
-      "estacao": "Inverno",
-      "ano": 2023,
-      "orcamento": 65742,
-      "modelos": []
-    },
-    {
       "id": 711,
-      "nome": "Ballet",
-      "responsavel": "Beatriz",
+      "nome": "Deseo",
+      "responsavel": "Beatriz Ceschini",
       "marca": "Triz",
       "estacao": "Outono",
-      "ano": 2024,
+      "ano": 2023,
       "orcamento": 6900,
       "modelos": []
     },
     {
-      "id": 321,
-      "nome": "Wood",
-      "responsavel": "Beatriz",
-      "marca": "Janfer",
-      "estacao": "Inverno",
+      "id": 88,
+      "nome": "Mar",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Dammyler",
+      "estacao": "Verão",
+      "ano": 2025,
+      "orcamento": 9400,
+      "modelos": []
+    },
+    {
+      "id": 32,
+      "nome": "Rose",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Nike",
+      "estacao": "Verão",
+      "ano": 2025,
+      "orcamento": 7654,
+      "modelos": []
+    },
+    {
+      "id": 836,
+      "nome": "Ouija",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Dammyler",
+      "estacao": "Primavera",
       "ano": 2024,
-      "orcamento": 4600,
+      "orcamento": 7860,
       "modelos": []
     }
   ],
