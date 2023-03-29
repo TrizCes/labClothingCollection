@@ -1,0 +1,62 @@
+<form [formGroup]="modeloForm" class="mt-5 mb-5 _size">
+  <div class="row mb-3">
+    <div class="form-floating mb-3 col">
+      <input type="text" class="form-control" id="nome" formControlName="nome" />
+      <label for="nome">Nome do modelo</label>
+    </div>
+    <div class="form-floating col">
+      <select class="form-select" id="tipo" formControlName="tipo">
+        <option selected disabled>Selecione o tipo</option>
+        <option *ngFor="let item of tipos" [value]="item">
+          {{ item }}
+        </option>
+      </select>
+      <label for="tipo">Tipo</label>
+    </div>
+  </div>
+  <div class="row mb-3">
+    <div class="form-floating mb-3 col">
+      <select *ngIf="colecoes"  class="form-select"  id="colecao" formControlName="colecao" >
+        <option selected disabled>Selecione a coleção</option>
+        <option *ngFor="let colecao of colecoes" [value]= "colecao.nome" >
+          {{ colecao.nome }}
+        </option>
+      </select>
+      <label for="colecao">Selecione a coleção:</label>
+    </div>
+    <div class="form-floating col">
+      <input type="text" class="form-control" id="responsavel" formControlName="responsavel" />
+      <label for="responsavel">Responsável pela modelo</label>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="form-floating mb-3 col">
+      <p class="w-100">Possui bordado?</p>
+      <div class="form-check me-3 d-flex">
+        <label class="m-3 me-5">
+          <input class="form-check-input" type="radio" formControlName="bordado" value="sim" />
+          Bordado
+        </label>
+        <label class="m-3">
+          <input class="form-check-input" type="radio" formControlName="bordado" value="não" />
+          Não
+        </label>
+      </div>
+    </div>
+
+    <div class="form-floating mb-3 col">
+      <p class="w-100">Possui estampa?</p>
+      <div class="form-check me-3 d-flex">
+        <label class="m-3 me-5">
+          <input class="form-check-input" type="radio" formControlName="estampa" value="sim" />
+          Estampa
+        </label>
+        <label class="m-3">
+          <input class="form-check-input" type="radio" formControlName="estampa" value="não"/>
+          Não
+        </label>
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,9 +1,9 @@
 .hero{
   width: 80vw;
+  height: max-content;
   padding: 1rem;
   padding-top: 2rem;
 }
-
 
 @media  screen and (max-width:960px) {
   .me_small{
@@ -19,4 +19,3 @@
   }
 
 }
-

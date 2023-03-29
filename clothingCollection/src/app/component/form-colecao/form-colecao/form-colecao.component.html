@@ -1,0 +1,32 @@
+<form [formGroup]="colecaoForm" class="mt-5 width_size">
+<div class="row">
+  <div class="form-floating mb-3 col">
+    <input type="text" class="form-control" id="nome" formControlName="nome">
+    <label for="nome">Nome da coleção</label>
+  </div>
+  <div class="form-floating col">
+    <input type="text" class="form-control" id="responsavel" formControlName="responsavel">
+    <label for="responsavel">Responsável pela coleção</label>
+  </div>
+</div>
+<div class="row">
+  <div class="form-floating mb-3 col">
+    <input type="text" class="form-control" id="estacao" formControlName="estacao">
+    <label for="estacao">Para qual estação?</label>
+  </div>
+  <div class="form-floating col">
+    <input type="text" class="form-control" id="marca" formControlName="marca">
+    <label for="marca">Para qual marca?</label>
+  </div>
+</div>
+<div class="row">
+  <div class="form-floating mb-3 col">
+    <input type="number" class="form-control" id="orcamento" formControlName="orcamento">
+    <label for="orcamento">Qual é o orçamento desta coleção?</label>
+  </div>
+  <div class="form-floating col">
+    <input type="number" class="form-control" id="ano" formControlName="ano">
+    <label for="ano">Ano de lançamento?</label>
+  </div>
+</div>
+</form>

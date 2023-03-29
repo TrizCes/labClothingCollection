@@ -24,6 +24,16 @@ import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.compon
 import { CardColecaoComponent } from './component/card-colecao/card-colecao/card-colecao.component';
 import { ColecoesService } from './services/colecoes.service';
 import { CardModelosComponent } from './component/card-modelos/card-modelos/card-modelos.component';
+import { CardOrcamentoMedioComponent } from './component/card-orcamentoMedio/card-orcamento-medio/card-orcamento-medio.component';
+import { MaioresOrcamentosComponent } from './component/tab-maiores-orcamentos/maiores-orcamentos/maiores-orcamentos.component';
+import { ListaColecoesComponent } from './pages/colecoes/lista-colecoes/lista-colecoes.component';
+import { TabColecoesComponent } from './component/tab-colecoes/tab-colecoes.component';
+import { CriarColecaoComponent } from './pages/criar-colecao/criar-colecao/criar-colecao.component';
+import { FormColecaoComponent } from './component/form-colecao/form-colecao/form-colecao.component';
+import { CriarModeloComponent } from './pages/criar-modelo/criar-modelo.component';
+import { FormModeloComponent } from './component/form-modelo/form-modelo.component';
+import { ModelosComponent } from './pages/modelos/modelos.component';
+import { TabModelosComponent } from './component/tab-modelos/tab-modelos.component';
 
 
 @NgModule({
@@ -40,6 +50,16 @@ import { CardModelosComponent } from './component/card-modelos/card-modelos/card
     DashboardComponent,
     CardColecaoComponent,
     CardModelosComponent,
+    CardOrcamentoMedioComponent,
+    MaioresOrcamentosComponent,
+    ListaColecoesComponent,
+    TabColecoesComponent,
+    CriarColecaoComponent,
+    FormColecaoComponent,
+    CriarModeloComponent,
+    FormModeloComponent,
+    ModelosComponent,
+    TabModelosComponent,
 
   ],
   imports: [

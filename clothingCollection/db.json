@@ -2,109 +2,28 @@
   "colecoes": [
     {
       "id": 1,
-<<<<<<< Updated upstream
-      "nome": "Coleção 1",
-      "Responsavel": "Beatriz Ceschini",
-      "Estação": "Inverno",
-      "Marca": "Nike",
-      "Orçamento": 9500,
-      "Ano": 2023,
-      "modelos": [
-        {
-          "id": 1,
-          "nome": "Modelo 1",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": 1,
-          "acabamento": "Bordado"
-        },
-        {
-          "id": 2,
-          "nome": "Modelo 2",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Saia",
-          "colecao": 1,
-          "acabamento": "Estampa"
-        }
-      ]
-=======
       "nome": "Zamioculca",
       "responsavel": "Beatriz Ceschini",
       "estacao": "Inverno",
       "marca": "Nike",
       "orcamento": 9500,
       "ano": 2023
->>>>>>> Stashed changes
     },
     {
       "id": 2,
-      "nome": "Coleção 2",
+      "nome": "Peperômia",
       "responsavel": "Beatriz Ceschini",
-      "estação": "Primavera",
       "marca": "Nike",
-<<<<<<< Updated upstream
-      "orçamento": 9500,
-      "ano": 2023,
-      "modelos": [
-        {
-          "id": 3,
-          "nome": "Modelo 1",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Camisa",
-          "colecao": 2,
-          "acabamento": "Bordado"
-        },
-        {
-          "id": 4,
-          "nome": "Modelo 2",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": 2,
-          "acabamento": "Bordado"
-        }
-      ]
-=======
       "estacao": "Primavera",
       "ano": 2024,
       "orcamento": 10500
->>>>>>> Stashed changes
     },
     {
       "id": 3,
-      "nome": "Coleção 3",
+      "nome": "Hera",
       "responsavel": "Beatriz Ceschini",
-      "estação": "Verão",
+      "estacao": "Verão",
       "marca": "Lewis",
-<<<<<<< Updated upstream
-      "orçamento": 5000,
-      "ano": 2024,
-      "modelos": [
-        {
-          "id": 5,
-          "nome": "Modelo 1",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Camisa",
-          "colecao": 3,
-          "acabamento": "Bordado"
-        },
-        {
-          "id": 6,
-          "nome": "Modelo 2",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": 3,
-          "acabamento": "Bordado"
-        },
-        {
-          "id": 7,
-          "nome": "Modelo 3",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Bermuda",
-          "colecao": 3,
-          "acabamento": "Bordado"
-        }
-      ]
-=======
       "orcamento": 5000,
       "ano": 2024
     },
@@ -151,18 +70,70 @@
       "marca": "Dammyler",
       "estacao": "Verão",
       "ano": 2025,
-      "orcamento": 9400,
-      "modelos": [
-        {
-          "id": 6684,
-          "nome": "Ret",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Boné",
-          "colecao": "Mar",
-          "bordado": "sim",
-          "estampa": "não"
-        }
-      ]
+      "orcamento": 9400
+    },
+    {
+      "id": 32,
+      "nome": "Rose",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Nike",
+      "estacao": "Verão",
+      "ano": 2025,
+      "orcamento": 7654
+    },
+    {
+      "id": 836,
+      "nome": "Ouija",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Dammyler",
+      "estacao": "Primavera",
+      "orcamento": 5000,
+      "ano": 2024
+    },
+    {
+      "id": 4,
+      "nome": "Salvia",
+      "responsavel": "Beatriz Ceschini",
+      "estacao": "Verão",
+      "marca": "Lewis",
+      "orcamento": 9000,
+      "ano": 2024
+    },
+    {
+      "id": 5,
+      "nome": "Cravo",
+      "responsavel": "Beatriz Ceschini",
+      "estacao": "Verão",
+      "marca": "Lewis",
+      "orcamento": 7000,
+      "ano": 2024
+    },
+    {
+      "id": 6,
+      "nome": "Violeta",
+      "responsavel": "Beatriz Ceschini",
+      "estacao": "Verão",
+      "marca": "Lewis",
+      "orcamento": 6870,
+      "ano": 2024
+    },
+    {
+      "id": 711,
+      "nome": "Deseo",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Triz",
+      "estacao": "Outono",
+      "ano": 2024,
+      "orcamento": 6900
+    },
+    {
+      "id": 88,
+      "nome": "Mar",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Dammyler",
+      "estacao": "Verão",
+      "ano": 2025,
+      "orcamento": 9400
     },
     {
       "id": 32,
@@ -264,7 +235,6 @@
       "colecao": "Ouija",
       "bordado": "sim",
       "estampa": "sim"
->>>>>>> Stashed changes
     }
   ],
   "usuarios": [

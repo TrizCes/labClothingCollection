@@ -4,7 +4,8 @@ export interface IModelos{
   responsavel: string;
   tipo: string;
   colecao: string;
-  acabamento: string[];
+  bordado: string;
+  estampa: string;
 }
 
 

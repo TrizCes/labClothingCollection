@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable} from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { API_PATH } from 'src/environments/environments';
 
@@ -8,11 +8,15 @@ import { IColecoes } from '../interfaces/colecoes';
 import { IModelos } from 'src/app/interfaces/modelos';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ModelosService {
 
   public numero!: number;
+
+  public modelosTotal: IModelos[] = [];
+
+  public colecaoID!: number;
 
   constructor(private _httpClient: HttpClient) {}
 
@@ -25,22 +29,16 @@ export class ModelosService {
     try {
       const lista = await this.listaModelos().toPromise();
       if (lista) {
-<<<<<<< Updated upstream
-        for(let i = 0; i < lista.length; i++) {
-          let contaModelos = lista[i].modelos.length;
-          this.numero = this.numero + contaModelos;
-=======
-         return this.numero = lista.length;;
->>>>>>> Stashed changes
+         return this.numero = lista.length;
         }
         return this.numero;
     } catch (e) {
       return this.numero;
     }
   }
-<<<<<<< Updated upstream
-=======
+
 /*
+
   async obterModelos(): Promise<IModelos[] | any> {
     this.modelosTotal = [];
     try {
@@ -84,6 +82,9 @@ export class ModelosService {
     }catch(e){
         console.log(e);
       }
+
   }*/
->>>>>>> Stashed changes
+
+  }
+
 }
