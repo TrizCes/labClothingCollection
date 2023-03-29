@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 import { API_PATH } from 'src/environments/environments';
@@ -41,6 +41,7 @@ export class ModelosService {
   }
 
   async obterModelos(): Promise<IModelos[] | any> {
+    this.modelosTotal = [];
     try {
       const lista = await this.listaColecoes().toPromise();
       if (lista) {
@@ -75,5 +76,12 @@ export class ModelosService {
     }catch(e){
       console.log(e);
     }
+  }
+
+  async deletarModelo(id: number){
+    try{
+    }catch(e){
+        console.log(e);
+      }
   }
 }

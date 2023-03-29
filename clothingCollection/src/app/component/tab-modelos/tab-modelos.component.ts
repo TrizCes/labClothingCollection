@@ -29,6 +29,6 @@ export class TabModelosComponent implements OnInit {
   }
 
   editaModelos(modelo : IModelos){
-    return
+    this._router.navigate([`modelos/edit/${modelo.id}`]);
   }
 }
