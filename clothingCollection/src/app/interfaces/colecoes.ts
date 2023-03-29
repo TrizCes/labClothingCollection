@@ -6,7 +6,10 @@ export interface IColecoes{
   marca: string;
   orcamento: string;
   ano: number;
+<<<<<<< Updated upstream
   modelos: string[];
+=======
+>>>>>>> Stashed changes
 }
 
 

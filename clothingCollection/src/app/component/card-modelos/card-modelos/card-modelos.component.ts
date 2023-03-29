@@ -18,9 +18,6 @@ export class CardModelosComponent implements OnInit {
   }
 
   pegaTotal() {
-    return this._modelosService
-      .contaTotal()
-      .then((a) => (this.total = a))
-      .catch((e) => console.log(e));
+    return this._modelosService.contaTotal().then((a) => (this.total = a)).catch((e) => console.log(e));
   }
 }
