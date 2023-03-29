@@ -20,25 +20,24 @@ export class ModelosService {
 
   constructor(private _httpClient: HttpClient) {}
 
-  listaColecoes(): Observable<IColecoes[]> {
-    return this._httpClient.get<IColecoes[]>(`${API_PATH}/colecoes`);
+  listaModelos(): Observable<IModelos[]> {
+    return this._httpClient.get<IModelos[]>(`${API_PATH}/modelos`);
   }
 
   async contaTotal(): Promise<number | any> {
     this.numero = 0;
     try {
-      const lista = await this.listaColecoes().toPromise();
+      const lista = await this.listaModelos().toPromise();
       if (lista) {
-        for (let i = 0; i < lista.length; i++) {
-          let contaModelos = lista[i].modelos.length;
-          this.numero = this.numero + contaModelos;
+         return this.numero = lista.length;
         }
         return this.numero;
-      }
     } catch (e) {
       return this.numero;
     }
   }
+
+/*
 
   async obterModelos(): Promise<IModelos[] | any> {
     this.modelosTotal = [];
@@ -83,5 +82,9 @@ export class ModelosService {
     }catch(e){
         console.log(e);
       }
+
+  }*/
+
   }
+
 }

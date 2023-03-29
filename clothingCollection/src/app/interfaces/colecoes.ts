@@ -1,5 +1,3 @@
-import { IModelos } from "./modelos";
-
 export interface IColecoes{
   id: number;
   nome: string;
@@ -8,7 +6,6 @@ export interface IColecoes{
   marca: string;
   orcamento: number;
   ano: number;
-  modelos: IModelos[];
 }
 
 
