@@ -19,6 +19,8 @@ export class FormModeloComponent implements OnInit {
   modeloForm!: FormGroup;
   id!: number;
   tipos: string[] = ['Bermuda', 'Biquíni', 'Bolsa', 'Boné', 'Calça', 'Calçados', 'Camisa', 'Chapéu', 'Saia' ];
+  editaModelo: boolean = false;
+
 
   @Output('salvaModelo') salvaModelo = new EventEmitter<FormGroup>();
 
@@ -39,7 +41,9 @@ export class FormModeloComponent implements OnInit {
 
 
   cadastroModelo(): void{
-    this.criarID();
+    if(!this.editaModelo){
+      this.criarID();
+    }
     this.modeloForm = new FormGroup ({
       id: new FormControl (this.id, [Validators.required]),
       nome: new FormControl ('', [Validators.required]),
@@ -70,4 +74,19 @@ export class FormModeloComponent implements OnInit {
     return this.id = Math.round((Math.random() * 10000));
   }
 
+  completaForm(modelo: IModelos):void{
+    this.editaModelo = true;
+    try{
+      this.id = modelo.id;
+      this.modeloForm.get(['id'])?.setValue(this.id);
+      this.modeloForm.get(['nome'])?.setValue(modelo.nome);
+      this.modeloForm.get(['responsavel'])?.setValue(modelo.responsavel);
+      this.modeloForm.get(['tipo'])?.setValue(modelo.tipo);
+      this.modeloForm.get(['colecao'])?.setValue(modelo.colecao);
+      this.modeloForm.get(['bordado'])?.setValue(modelo.bordado);
+      this.modeloForm.get(['estampa'])?.setValue(modelo.estampa);
+    }catch{
+      window.alert('Erro ao carregar');
+    }
+}
 }
