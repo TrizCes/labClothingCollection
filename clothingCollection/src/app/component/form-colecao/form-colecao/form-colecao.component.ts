@@ -57,7 +57,7 @@ export class FormColecaoComponent implements OnInit {
     this.salvaColecao.emit(this.colecaoForm);
     setTimeout(() => {
       this._router.navigate(['../colecoes'])
-    }, 250);
+    }, 450); //tempo para que o db.json seja atualizado
 
   }
 

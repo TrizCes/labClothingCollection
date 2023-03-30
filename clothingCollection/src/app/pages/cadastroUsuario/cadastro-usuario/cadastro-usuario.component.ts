@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 import { IUsuario } from 'src/app/interfaces/usuario';
 import { CadastroUsuarioService } from 'src/app/services/cadastro-usuario.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cadastro-usuario',
@@ -15,7 +16,7 @@ export class CadastroUsuarioComponent implements OnInit {
   senhasDiferentes!: boolean;
   id!: number;
 
-  constructor (private _fb: FormBuilder, private _cadUsuarioServ: CadastroUsuarioService){}
+  constructor (private _fb: FormBuilder, private _cadUsuarioServ: CadastroUsuarioService, private _router : Router){}
 
   ngOnInit(): void {
       this.criarNovoUsuario();
@@ -40,14 +41,16 @@ export class CadastroUsuarioComponent implements OnInit {
   cadastrar(){
   this.criarID();
   if(!this.cadastroForm.valid){
-    alert('Dados invalidos, tente novamente')
+   window.alert('Dados invalidos, tente novamente')
     return
   } else if(this.cadastroForm.value.senha != this.cadastroForm.value.confirmeSenha){
     this.senhasDiferentes = true;
     return
   }
-
   const usuario : IUsuario[] = this.cadastroForm.value
-  this._cadUsuarioServ.novoCadastro(usuario)
+  this._cadUsuarioServ.novoCadastro(usuario);
+  setTimeout(() => {
+    this._router.navigate(['../login'])
+  }, 400);
   }
 }

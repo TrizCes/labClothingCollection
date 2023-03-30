@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { IColecoes } from 'src/app/interfaces/colecoes';
 
@@ -9,7 +9,7 @@ import { ColecoesService } from 'src/app/services/colecoes.service';
   templateUrl: './maiores-orcamentos.component.html',
   styleUrls: ['./maiores-orcamentos.component.scss']
 })
-export class MaioresOrcamentosComponent implements OnInit {
+export class MaioresOrcamentosComponent implements OnInit, OnDestroy {
   public colecoes!: [];
   public colecao!: string;
   public responsavel!: string;
@@ -23,14 +23,17 @@ export class MaioresOrcamentosComponent implements OnInit {
 
   }
 
+  ngOnDestroy(): void {
+    clearInterval(this.orcamento);
+    clearInterval(this.modelos);
+    this.colecoes = [];
+  };
+
   async obterDadosTabela(){
     try{
       this.colecoes = await this._colecoesService.obterColecoes()
-      console.log(this.colecoes);
       this.colecoes = this.colecoes.sort((a : IColecoes, b : IColecoes) => b.orcamento - a.orcamento)
-      console.log(this.colecoes);
-
-      const exibir = this.colecoes.slice(0, 5);
+       const exibir = this.colecoes.slice(0, 5);
       exibir.forEach((colecao : IColecoes) => {
         this.colecao = colecao.nome;
         this.responsavel = colecao.responsavel;

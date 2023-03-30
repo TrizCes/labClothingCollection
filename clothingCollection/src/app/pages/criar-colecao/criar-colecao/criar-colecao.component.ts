@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
@@ -13,7 +13,7 @@ import { IColecoes } from 'src/app/interfaces/colecoes';
   templateUrl: './criar-colecao.component.html',
   styleUrls: ['./criar-colecao.component.scss']
 })
-export class CriarColecaoComponent implements OnInit {
+export class CriarColecaoComponent implements OnInit, OnDestroy  {
 
   colecoes!: IColecoes[];
   colecao!: IColecoes;
@@ -29,6 +29,10 @@ export class CriarColecaoComponent implements OnInit {
     this.estilizaRota();
 
   };
+
+  ngOnDestroy(): void {
+      this.colecoes = [];
+  }
 
   salvaColecao(colecao: FormGroup){
     if(!colecao){

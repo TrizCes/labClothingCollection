@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { IUsuario } from '../interfaces/usuario';
-import { UsuarioClass } from '../classes/usuario';
 import { API_PATH } from '../../environments/environments';
 import { Observable } from 'rxjs';
 
@@ -12,7 +11,6 @@ import { Observable } from 'rxjs';
 })
 export class AuthService {
   private statusLogin: boolean = false;
-  private listaUsuarios!: UsuarioClass[];
   private numeroUsuarios!: number;
 
   constructor(private router: Router, private _httpClient: HttpClient) {}

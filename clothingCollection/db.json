@@ -19,15 +19,6 @@
           "estampa": "não"
         },
         {
-          "id": 24684,
-          "nome": "Saia com Estampa",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Saia",
-          "colecao": "Zamioculca",
-          "bordado": "não",
-          "estampa": "sim"
-        },
-        {
           "id": 11548,
           "nome": "Moletom com Estampa",
           "responsavel": "Beatriz Ceschini",
@@ -35,53 +26,15 @@
           "colecao": "Zamioculca",
           "bordado": "não",
           "estampa": "sim"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "nome": "Peperômia",
-      "responsavel": "Beatriz Ceschini",
-      "marca": "Nike",
-      "estacao": "Primavera",
-      "ano": 2024,
-      "orcamento": 10500,
-      "modelos": [
-        {
-          "id": 3216846,
-          "nome": "Camisa com Bordado",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Camisa",
-          "colecao": "Peperômia",
-          "bordado": "sim",
-          "estampa": "não"
         },
         {
-          "id": 44146,
-          "nome": "Calça com Bordado",
+          "id": 24684,
+          "nome": "Saia com Estampa Floral",
           "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Peperômia",
-          "bordado": "sim",
-          "estampa": "não"
-        },
-        {
-          "id": 44146,
-          "nome": "Calça Flare",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Peperômia",
+          "tipo": "Saia",
+          "colecao": "Zamioculca",
           "bordado": "não",
-          "estampa": "não"
-        },
-        {
-          "id": 44146,
-          "nome": "Calça com Estampa",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Peperômia",
-          "bordado": "não",
-          "estampa": "não"
+          "estampa": "sim"
         }
       ]
     },
@@ -93,7 +46,26 @@
       "estacao": "Outono",
       "ano": 2024,
       "orcamento": 6900,
-      "modelos": []
+      "modelos": [
+        {
+          "id": 770,
+          "nome": "Saia longa",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Saia",
+          "colecao": "Deseo",
+          "bordado": "não",
+          "estampa": "sim"
+        },
+        {
+          "id": 3393,
+          "nome": "Saia envelope",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Saia",
+          "colecao": "Deseo",
+          "bordado": "não",
+          "estampa": "sim"
+        }
+      ]
     },
     {
       "id": 32,
@@ -103,7 +75,35 @@
       "estacao": "Verão",
       "ano": 2025,
       "orcamento": 7654,
-      "modelos": []
+      "modelos": [
+        {
+          "id": 7470,
+          "nome": "Mochila",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bolsa",
+          "colecao": "Rose",
+          "bordado": "não",
+          "estampa": "sim"
+        },
+        {
+          "id": 2996,
+          "nome": "Carteira com argola",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bolsa",
+          "colecao": "Rose",
+          "bordado": "não",
+          "estampa": "não"
+        },
+        {
+          "id": 1280,
+          "nome": "Bolsa de mão",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bolsa",
+          "colecao": "Rose",
+          "bordado": "sim",
+          "estampa": "não"
+        }
+      ]
     },
     {
       "id": 6,
@@ -151,6 +151,15 @@
           "colecao": "Mar",
           "bordado": "sim",
           "estampa": "sim"
+        },
+        {
+          "id": 3893,
+          "nome": "Cortininha",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Biquíni",
+          "colecao": "Mar",
+          "bordado": "sim",
+          "estampa": "sim"
         }
       ]
     },
@@ -175,42 +184,43 @@
       ]
     },
     {
-      "id": 5,
-      "nome": "Cravo",
+      "id": 2,
+      "nome": "Peperômia",
       "responsavel": "Beatriz Ceschini",
-      "estacao": "Verão",
-      "marca": "Lewis",
-      "orcamento": 7000,
+      "marca": "Nike",
+      "estacao": "Primavera",
       "ano": 2024,
+      "orcamento": 10500,
       "modelos": [
         {
-          "id": 526,
-          "nome": "Pantalona",
+          "id": 3216846,
+          "nome": "Camisa com Bordado",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Camisa",
+          "colecao": "Peperômia",
+          "bordado": "sim",
+          "estampa": "não"
+        },
+        {
+          "id": 44146,
+          "nome": "Calça com Estampa",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": "Ouija",
-          "bordado": "sim",
-          "estampa": "sim"
-        },
-        {
-          "id": 6418,
-          "nome": "Cortininha",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Biquíni",
-          "colecao": "Ouija",
+          "colecao": "Peperômia",
           "bordado": "não",
-          "estampa": "sim"
-        },
-        {
-          "id": 1051,
-          "nome": "Tomara-que-caia",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Biquíni",
-          "colecao": "Ouija",
-          "bordado": "sim",
           "estampa": "não"
         }
       ]
+    },
+    {
+      "id": 377,
+      "nome": "Yellow",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Gatabakana ",
+      "estacao": "Primavera/Verão",
+      "ano": 2024,
+      "orcamento": 9000,
+      "modelos": []
     }
   ],
   "usuarios": [
@@ -258,6 +268,33 @@
       "senha": "12345678",
       "confirmeSenha": "12345678",
       "cnpj": 45455804000184
+    },
+    {
+      "id": 9169,
+      "usuario": "teste01",
+      "empresa": "Audaces",
+      "email": "teste01@email.com",
+      "senha": "12345678",
+      "confirmeSenha": "12345678",
+      "cnpj": 456984569845
+    },
+    {
+      "id": 9170,
+      "usuario": "teste01",
+      "empresa": "Audaces",
+      "email": "teste01@email.com",
+      "senha": "12345678",
+      "confirmeSenha": "12345678",
+      "cnpj": 456984569845
+    },
+    {
+      "id": 9171,
+      "usuario": "teste03@email.com",
+      "empresa": "Audaces",
+      "email": "teste03@email.com",
+      "senha": "987654321",
+      "confirmeSenha": "987654321",
+      "cnpj": 4569774585
     }
   ]
 }
