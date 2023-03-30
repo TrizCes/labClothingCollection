@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { OrcamentoService } from 'src/app/services/orcamento-medio.service';
 
 @Component({
@@ -6,13 +6,17 @@ import { OrcamentoService } from 'src/app/services/orcamento-medio.service';
   templateUrl: './card-orcamento-medio.component.html',
   styleUrls: ['./card-orcamento-medio.component.scss']
 })
-export class CardOrcamentoMedioComponent {
-  total!: any;
+export class CardOrcamentoMedioComponent implements OnInit , OnDestroy {
+  total!: number;
 
   constructor(private _orcamentoService: OrcamentoService) {}
 
   ngOnInit(): void {
     this.pegaOrcamentoM();
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.total);
   }
 
   pegaOrcamentoM() {

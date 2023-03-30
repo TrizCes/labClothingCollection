@@ -1,11 +1,19 @@
-<div class="d-flex flex-column justify-content-center align-items-center bg-info-subtle size_heigth gap-4">
+<div
+  class="d-flex flex-column justify-content-center align-items-center bg-info-subtle size_heigth gap-4"
+>
   <img class="size_img" src="../../../assets/logo_audaces.svg" />
 
-  <div class="card p-4 col-lg-4 align-items-center grid row-gap-3 border border-0">
+  <div
+    class="card p-4 col-lg-4 align-items-center grid row-gap-3 border border-0"
+  >
     <div class="mb-3 text-center">
       <div class="d-flex mb-3 text-center justify-content-left">
-        <img class="size_backIcon col-2" src="../../../../assets/arrow_back_Ícone.svg" alt="Icone voltar"
-          [routerLink]="['']" />
+        <img
+          class="size_backIcon col-2"
+          src="../../../../assets/arrow_back_Ícone.svg"
+          alt="Icone voltar"
+          [routerLink]="['']"
+        />
         <h5 class="card-title align-self-center col-10">Sign Up</h5>
       </div>
       <p class="card-text">Insira seus dados para criar uma conta</p>
@@ -13,28 +21,68 @@
     <form class="col-12" [formGroup]="cadastroForm" (ngSubmit)="cadastrar()">
       <div class="gap-2 col">
         <div class="mb-3">
-          <input type="text" class="form-control col" id="nome" aria-describedby="nome" placeholder="Nome"
-            formControlName="usuario" />
+          <input
+            type="text"
+            class="form-control col"
+            id="nome"
+            aria-describedby="nome"
+            placeholder="Nome"
+            formControlName="usuario"
+          />
         </div>
         <div class="mb-3">
-          <input type="text" class="form-control col" id="empresa" aria-describedby="empresa" placeholder="Empresa"
-            formControlName="empresa" />
+          <input
+            type="text"
+            class="form-control col"
+            id="empresa"
+            aria-describedby="empresa"
+            placeholder="Empresa"
+            formControlName="empresa"
+          />
         </div>
         <div class="mb-3">
-          <input type="number" class="form-control col" id="cnpj" aria-describedby="cnpj" placeholder="Cnpj"
-            formControlName="cnpj" [minlength]="14"/>
+          <input
+            type="number"
+            class="form-control col"
+            id="cnpj"
+            aria-describedby="cnpj"
+            placeholder="Cnpj"
+            formControlName="cnpj"
+            [minlength]="14"
+          />
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control col" id="email" aria-describedby="email"
-            placeholder="Informe seu email" formControlName="email" />
+          <input
+            type="email"
+            class="form-control col"
+            id="email"
+            aria-describedby="email"
+            placeholder="Informe seu email"
+            formControlName="email"
+          />
         </div>
         <div class="d-flex gap-2 mb-3">
-          <input type="password" class="form-control col" id="senha" placeholder="Senha" formControlName="senha" />
-          <input type="password" class="form-control col" id="confimeSenha" placeholder="Confirme a senha"
-            formControlName="confirmeSenha" />
+          <input
+            type="password"
+            class="form-control col"
+            id="senha"
+            placeholder="Senha"
+            formControlName="senha"
+          />
+          <input
+            type="password"
+            class="form-control col"
+            id="confimeSenha"
+            placeholder="Confirme a senha"
+            formControlName="confirmeSenha"
+          />
         </div>
         <div *ngIf="senhasDiferentes === true">
-          <p> <ngb-alert type="primary" [dismissible]="false"> As senhas digitadas são diferentes </ngb-alert> </p>
+          <p>
+            <ngb-alert type="primary" [dismissible]="false">
+              As senhas digitadas são diferentes
+            </ngb-alert>
+          </p>
         </div>
         <div class="mb-3">
           <button type="submit" class="btn btn-primary col-lg-12">

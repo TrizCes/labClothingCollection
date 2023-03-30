@@ -102,6 +102,7 @@ export class FormModeloComponent implements OnInit {
   completaForm(modelo: IModelos):void{
     this.editaModelo = true;
     try{
+      //atribui a cada item do form o dado guardado em cache:
       this.id = modelo.id;
       this.modeloForm.get(['id'])?.setValue(this.id);
       this.modeloForm.get(['nome'])?.setValue(modelo.nome);
@@ -110,6 +111,11 @@ export class FormModeloComponent implements OnInit {
       this.modeloForm.get(['colecao'])?.setValue(modelo.colecao);
       this.modeloForm.get(['bordado'])?.setValue(modelo.bordado);
       this.modeloForm.get(['estampa'])?.setValue(modelo.estampa);
+      let status = document.getElementById('colecao');
+      status?.setAttribute('disabled', 'true' );
+      /* devido a estrutura do db.json  que imposibilitou a edicão
+       de cada modelo em separado o unico dado não reatribuivel no
+       modelo é a coleção que ele pertence, por isso escolhi manter o campo indisponível para interação*/
     }catch{
       window.alert('Erro ao carregar');
     }
