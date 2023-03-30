@@ -23,6 +23,8 @@ export class FormModeloComponent implements OnInit {
 
 
   @Output('salvaModelo') salvaModelo = new EventEmitter<FormGroup>();
+  @Output('alterarModelo') alterarModelo = new EventEmitter<FormGroup>();
+  @Output('deletarModelo') deletarModelo = new EventEmitter<FormGroup>();
 
   constructor(private _router: Router, private _colecoesService: ColecoesService){}
 
@@ -38,7 +40,6 @@ export class FormModeloComponent implements OnInit {
       console.log(e)
     }
   }
-
 
   cadastroModelo(): void{
     if(!this.editaModelo){
@@ -56,14 +57,38 @@ export class FormModeloComponent implements OnInit {
   }
 
   salva() {
-    console.log(this.modeloForm.value);
-
-    if(!this.modeloForm.valid){
+     if(!this.modeloForm.valid){
       alert('Dados invalidos, tente novamente')
       return
     }
 
     this.salvaModelo.emit(this.modeloForm);
+    setTimeout(() => {
+      this._router.navigate(['../modelos'])
+    }, 450);
+    return
+  }
+
+  alterar(){
+    if(!this.modeloForm.valid){
+      alert('Dados invalidos, tente novamente')
+      return
+    }
+
+    this.alterarModelo.emit(this.modeloForm);
+    setTimeout(() => {
+      this._router.navigate(['../modelos'])
+    }, 450);
+    return
+  }
+
+  deletar(){
+    if(!this.modeloForm.valid){
+      alert('Dados invalidos, tente novamente')
+      return
+    }
+
+    this.deletarModelo.emit(this.modeloForm);
     setTimeout(() => {
       this._router.navigate(['../modelos'])
     }, 450);
@@ -89,4 +114,5 @@ export class FormModeloComponent implements OnInit {
       window.alert('Erro ao carregar');
     }
 }
+
 }
