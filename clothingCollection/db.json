@@ -10,20 +10,31 @@
       "ano": 2023,
       "modelos": [
         {
-          "id": 1,
+          "id": 11548,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 1,
-          "acabamento": "Bordado"
+          "colecao": "Zamioculca",
+          "bordado": "Sim",
+          "estampa": "Não"
         },
         {
-          "id": 2,
+          "id": 24684,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Saia",
-          "colecao": 1,
-          "acabamento": "Estampa"
+          "colecao": "Zamioculca",
+          "bordado": "Não",
+          "estampa": "Sim"
+        },
+        {
+          "id": 11548,
+          "nome": "Moletom",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": "Zamioculca",
+          "bordado": "não",
+          "estampa": "sim"
         }
       ]
     },
@@ -37,20 +48,40 @@
       "orcamento": 10500,
       "modelos": [
         {
-          "id": 3,
+          "id": 3216846,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 2,
-          "acabamento": "Bordado"
+          "colecao": "Peperômia",
+          "bordado": "Sim",
+          "estampa": "Não"
         },
         {
-          "id": 4,
+          "id": 44146,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 2,
-          "acabamento": "Bordado"
+          "colecao": "Peperômia",
+          "bordado": "Sim",
+          "estampa": "Não"
+        },
+        {
+          "id": 44146,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": "Peperômia",
+          "bordado": "não",
+          "estampa": "não"
+        },
+        {
+          "id": 44146,
+          "nome": "Flare",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": "Peperômia",
+          "bordado": "não",
+          "estampa": "não"
         }
       ]
     },
@@ -64,28 +95,31 @@
       "ano": 2024,
       "modelos": [
         {
-          "id": 5,
+          "id": 5484,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 3,
-          "acabamento": "Bordado"
+          "colecao": "Hera",
+          "bordado": "Não",
+          "estampa": "Sim"
         },
         {
-          "id": 6,
+          "id": 614845,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 3,
-          "acabamento": "Bordado"
+          "colecao": "Hera",
+          "bordado": "Não",
+          "estampa": "Sim"
         },
         {
-          "id": 7,
+          "id": 71841,
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 3,
-          "acabamento": "Bordado"
+          "colecao": "Hera",
+          "bordado": "Sim",
+          "estampa": "Não"
         }
       ]
     },
@@ -99,28 +133,31 @@
       "ano": 2024,
       "modelos": [
         {
-          "id": 5,
+          "id": 54168864,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 4,
-          "acabamento": "Bordado"
+          "colecao": "Salvia",
+          "bordado": "Não",
+          "estampa": "Sim"
         },
         {
-          "id": 6,
+          "id": 68644164,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 4,
-          "acabamento": "Bordado"
+          "colecao": "Salvia",
+          "bordado": "Sim",
+          "estampa": "Não"
         },
         {
-          "id": 7,
+          "id": 7418549,
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 4,
-          "acabamento": "Bordado"
+          "colecao": "Salvia",
+          "bordado": "Não",
+          "estampa": "Sim"
         }
       ]
     },
@@ -134,28 +171,31 @@
       "ano": 2024,
       "modelos": [
         {
-          "id": 5,
+          "id": 552542,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 5,
-          "acabamento": "Bordado"
+          "colecao": "Cravo",
+          "bordado": "Não",
+          "estampa": "Sim"
         },
         {
-          "id": 6,
+          "id": 6257423,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 5,
-          "acabamento": "Bordado"
+          "colecao": "Cravo",
+          "bordado": "Sim",
+          "estampa": "Não"
         },
         {
-          "id": 7,
+          "id": 747525,
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 5,
-          "acabamento": "Bordado"
+          "colecao": "Cravo",
+          "bordado": "Sim",
+          "estampa": "Não"
         }
       ]
     },
@@ -169,28 +209,31 @@
       "ano": 2024,
       "modelos": [
         {
-          "id": 5,
+          "id": 543253,
           "nome": "Modelo 1",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
-          "colecao": 6,
-          "acabamento": "Bordado"
+          "colecao": "Violeta",
+          "bordado": "Sim",
+          "estampa": "Não"
         },
         {
-          "id": 6,
+          "id": 6255,
           "nome": "Modelo 2",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": 6,
-          "acabamento": "Bordado"
+          "colecao": "Violeta",
+          "bordado": "Sim",
+          "estampa": "Não"
         },
         {
-          "id": 7,
+          "id": 7252,
           "nome": "Modelo 3",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Bermuda",
-          "colecao": 6,
-          "acabamento": "Bordado"
+          "colecao": "Violeta",
+          "bordado": "Não",
+          "estampa": "Sim"
         }
       ]
     },
@@ -200,7 +243,7 @@
       "responsavel": "Beatriz Ceschini",
       "marca": "Triz",
       "estacao": "Outono",
-      "ano": 2023,
+      "ano": 2024,
       "orcamento": 6900,
       "modelos": []
     },
@@ -212,7 +255,17 @@
       "estacao": "Verão",
       "ano": 2025,
       "orcamento": 9400,
-      "modelos": []
+      "modelos": [
+        {
+          "id": 6684,
+          "nome": "Ret",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Boné",
+          "colecao": "Mar",
+          "bordado": "sim",
+          "estampa": "não"
+        }
+      ]
     },
     {
       "id": 32,
@@ -232,7 +285,44 @@
       "estacao": "Primavera",
       "ano": 2024,
       "orcamento": 7860,
-      "modelos": []
+      "modelos": [
+        {
+          "id": 526,
+          "nome": "Pantalona",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": "Ouija",
+          "bordado": "sim",
+          "estampa": "não"
+        },
+        {
+          "id": 526,
+          "nome": "Pantalona",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": "Ouija",
+          "bordado": "sim",
+          "estampa": "sim"
+        },
+        {
+          "id": 6418,
+          "nome": "Cortininha",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Biquíni",
+          "colecao": "Ouija",
+          "bordado": "não",
+          "estampa": "sim"
+        },
+        {
+          "id": 1051,
+          "nome": "Tomara-que-caia",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Biquíni",
+          "colecao": "Ouija",
+          "bordado": "sim",
+          "estampa": "não"
+        }
+      ]
     }
   ],
   "usuarios": [

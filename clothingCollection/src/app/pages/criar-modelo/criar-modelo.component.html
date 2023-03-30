@@ -1,0 +1,42 @@
+<section *ngIf="!definidoID" class="hero mt-5 me-5 pb-5 justify-content-start align-items-center col-sm-12">
+  <h2 class="d-flex mb-1 text-light-emphasis text-secondary">
+    Criar Modelo
+  </h2>
+  <div class="card col d-flex justify-content-around mt-3 ms-2 pb-4 border-0 me_small">
+    <app-form-modelo class="d-flex col-12 justify-content-around" (salvaModelo)="salvaModelo($event)"></app-form-modelo>
+    <div class="d-flex justify-content-end col-10 align-self-end mt-3 me-5">
+      <button class="btn btn-light me-5 w-25" [routerLink]="['../../../modelos']">
+        Cancelar
+      </button>
+      <button class="btn btn-primary w-25" (click)="formModelo.salva()">
+        Salvar
+      </button>
+    </div>
+  </div>
+</section>
+
+<section *ngIf="definidoID" class="hero mt-5 me-5 pb-5 justify-content-start align-items-center col-sm-12">
+  <h2 class="d-flex mb-1 text-light-emphasis text-secondary">
+    Editar Modelo
+  </h2>
+  <div class="card col d-flex justify-content-around mt-3 ms-2 pb-4 border-0 me_small">
+    <app-form-modelo class="d-flex col-12 justify-content-around" (salvaModelo)="salvaModelo($event)"></app-form-modelo>
+    <div class="d-flex justify-content-between col-12 mt-3 ms-5 me-5">
+      <div class="d-flex justify-content-start col-4 ms-5">
+        <button class="btn btn-danger w-30" ngbPopover="Deletar a coleção também excluirá todos os modelos pertencentes a ela."
+        triggers="mouseenter:mouseleave"
+        popoverTitle="Atenção!" (click)="deletar()">
+          Deletar
+        </button>
+      </div>
+      <div class="d-flex justify-content-end gap-4 col-4 me-5">
+        <button class="btn btn-light me-5 w-30" [routerLink]="['../../../modelos']">
+        Cancelar
+      </button>
+      <button class="btn btn-primary w-30" (click)="formModelo.salva()">
+        Alterar
+      </button>
+      </div>
+    </div>
+  </div>
+</section>

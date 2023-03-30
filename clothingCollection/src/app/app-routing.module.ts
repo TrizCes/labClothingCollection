@@ -12,6 +12,8 @@ import { CadastroUsuarioComponent } from './pages/cadastroUsuario/cadastro-usuar
 import { DashboardComponent } from './pages/dashboard/dashboard/dashboard.component';
 import { ListaColecoesComponent } from './pages/colecoes/lista-colecoes/lista-colecoes.component';
 import { CriarColecaoComponent } from './pages/criar-colecao/criar-colecao/criar-colecao.component';
+import { ModelosComponent } from './pages/modelos/modelos.component';
+import { CriarModeloComponent } from './pages/criar-modelo/criar-modelo.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,9 @@ const routes: Routes = [
   children: [
     {path: 'dashboard', component: DashboardComponent},
     {path: 'colecoes', component: ListaColecoesComponent},
-    {path: 'colecoes/edit/:id', component:CriarColecaoComponent}
+    {path: 'colecoes/edit/:id', component:CriarColecaoComponent},
+    {path: 'modelos', component: ModelosComponent},
+    {path: 'modelos/edit/:id', component: CriarModeloComponent},
   ]},
   {path: 'login', component: ContentComponent, children:[
     {path: '', component: LoginComponent },
