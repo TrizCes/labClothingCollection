@@ -15,8 +15,8 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Zamioculca",
-          "bordado": "Sim",
-          "estampa": "Não"
+          "bordado": "sim",
+          "estampa": "não"
         },
         {
           "id": 24684,
@@ -24,8 +24,8 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Saia",
           "colecao": "Zamioculca",
-          "bordado": "Não",
-          "estampa": "Sim"
+          "bordado": "não",
+          "estampa": "sim"
         },
         {
           "id": 11548,
@@ -33,8 +33,8 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Moletom",
           "colecao": "Zamioculca",
-          "bordado": "Não",
-          "estampa": "Sim"
+          "bordado": "não",
+          "estampa": "sim"
         }
       ]
     },
@@ -53,8 +53,8 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
           "colecao": "Peperômia",
-          "bordado": "Sim",
-          "estampa": "Não"
+          "bordado": "sim",
+          "estampa": "não"
         },
         {
           "id": 44146,
@@ -62,8 +62,8 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Peperômia",
-          "bordado": "Sim",
-          "estampa": "Não"
+          "bordado": "sim",
+          "estampa": "não"
         },
         {
           "id": 44146,
@@ -71,8 +71,8 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Peperômia",
-          "bordado": "Não",
-          "estampa": "Não"
+          "bordado": "não",
+          "estampa": "não"
         },
         {
           "id": 44146,
@@ -80,8 +80,8 @@
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Peperômia",
-          "bordado": "Não",
-          "estampa": "Não"
+          "bordado": "não",
+          "estampa": "não"
         }
       ]
     },
@@ -184,13 +184,31 @@
       "ano": 2024,
       "modelos": [
         {
-          "id": 6257423,
-          "nome": "Modelo 2",
+          "id": 526,
+          "nome": "Pantalona",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": "Cravo",
-          "bordado": "Sim",
-          "estampa": "Não"
+          "colecao": "Ouija",
+          "bordado": "sim",
+          "estampa": "sim"
+        },
+        {
+          "id": 6418,
+          "nome": "Cortininha",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Biquíni",
+          "colecao": "Ouija",
+          "bordado": "não",
+          "estampa": "sim"
+        },
+        {
+          "id": 1051,
+          "nome": "Tomara-que-caia",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Biquíni",
+          "colecao": "Ouija",
+          "bordado": "sim",
+          "estampa": "não"
         }
       ]
     }

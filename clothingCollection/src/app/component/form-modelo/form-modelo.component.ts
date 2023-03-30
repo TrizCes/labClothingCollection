@@ -65,7 +65,7 @@ export class FormModeloComponent implements OnInit {
     this.salvaModelo.emit(this.modeloForm);
     setTimeout(() => {
       this._router.navigate(['../modelos'])
-    }, 300);
+    }, 450);
     return
   }
 
