@@ -13,7 +13,7 @@ O software possui páginas para gerenciamento de coleções de moda e dos modelo
 
 - Angular CLI (v15.1.5 ou superior). Clique [aqui](https://angular.io/cli) para mais informações.
 
--Instalar o plugin `json-server` para rodar a API Fake `db.json`;
+- Instalar o plugin `json-server` para rodar a API Fake `db.json`;
 Para executar a API Fake, utilizamos o comando **json-server --watch db.json** .
 É necessário rodar o arquivo na porta 3000 (localhost:3000).
 Clique [aqui](https://www.fabricadecodigo.com/json-server/) para mais informações.
