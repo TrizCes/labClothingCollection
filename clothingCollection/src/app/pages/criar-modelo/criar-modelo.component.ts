@@ -36,7 +36,6 @@ export class CriarModeloComponent implements OnInit {
   async estilizaRota(){
     this.definidoID = this._activatedRoute.snapshot.params.hasOwnProperty('id') && this._activatedRoute.snapshot.params['id'] != ':id';
     this.id = await this._activatedRoute.snapshot.params['id'];
-    console.log(this.id);
 
     if(this.definidoID){
       await this.obterModelos();
@@ -58,8 +57,15 @@ export class CriarModeloComponent implements OnInit {
     }
   }
 
-  deletar(){
-    this._modelosService.deletarModelo(this.id);
+  alterar(modelo: FormGroup){
+    if(!modelo){
+      window.alert('Erro em salvar o modelo')
+    }
+    this._modelosService.alterarModelo(modelo.value);
+  }
+
+  deletar(modelo: FormGroup){
+    this._modelosService.deletarModelo(modelo.value);
     setTimeout(() => {
       this._router.navigate(['../colecoes'])
     }, 400); //add tempo para atualizar o db.json, pois se não tela exibe dados antigos

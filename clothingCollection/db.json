@@ -11,7 +11,7 @@
       "modelos": [
         {
           "id": 11548,
-          "nome": "Modelo 1",
+          "nome": "Calça com Bordado",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Zamioculca",
@@ -20,7 +20,7 @@
         },
         {
           "id": 24684,
-          "nome": "Modelo 2",
+          "nome": "Saia com Estampa",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Saia",
           "colecao": "Zamioculca",
@@ -29,12 +29,12 @@
         },
         {
           "id": 11548,
-          "nome": "Moletom",
+          "nome": "Moletom com Estampa",
           "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
+          "tipo": "Moletom",
           "colecao": "Zamioculca",
-          "bordado": "não",
-          "estampa": "sim"
+          "bordado": "Não",
+          "estampa": "Sim"
         }
       ]
     },
@@ -49,7 +49,7 @@
       "modelos": [
         {
           "id": 3216846,
-          "nome": "Modelo 1",
+          "nome": "Camisa com Bordado",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Camisa",
           "colecao": "Peperômia",
@@ -58,7 +58,7 @@
         },
         {
           "id": 44146,
-          "nome": "Modelo 2",
+          "nome": "Calça com Bordado",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Peperômia",
@@ -67,173 +67,21 @@
         },
         {
           "id": 44146,
-          "nome": "Modelo 2",
+          "nome": "Calça Flare",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Peperômia",
-          "bordado": "não",
-          "estampa": "não"
+          "bordado": "Não",
+          "estampa": "Não"
         },
         {
           "id": 44146,
-          "nome": "Flare",
+          "nome": "Calça com Estampa",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
           "colecao": "Peperômia",
-          "bordado": "não",
-          "estampa": "não"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "nome": "Hera",
-      "responsavel": "Beatriz Ceschini",
-      "estacao": "Verão",
-      "marca": "Lewis",
-      "orcamento": 5000,
-      "ano": 2024,
-      "modelos": [
-        {
-          "id": 5484,
-          "nome": "Modelo 1",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Camisa",
-          "colecao": "Hera",
           "bordado": "Não",
-          "estampa": "Sim"
-        },
-        {
-          "id": 614845,
-          "nome": "Modelo 2",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Hera",
-          "bordado": "Não",
-          "estampa": "Sim"
-        },
-        {
-          "id": 71841,
-          "nome": "Modelo 3",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Bermuda",
-          "colecao": "Hera",
-          "bordado": "Sim",
           "estampa": "Não"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "nome": "Salvia",
-      "responsavel": "Beatriz Ceschini",
-      "estacao": "Verão",
-      "marca": "Lewis",
-      "orcamento": 9000,
-      "ano": 2024,
-      "modelos": [
-        {
-          "id": 54168864,
-          "nome": "Modelo 1",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Camisa",
-          "colecao": "Salvia",
-          "bordado": "Não",
-          "estampa": "Sim"
-        },
-        {
-          "id": 68644164,
-          "nome": "Modelo 2",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Salvia",
-          "bordado": "Sim",
-          "estampa": "Não"
-        },
-        {
-          "id": 7418549,
-          "nome": "Modelo 3",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Bermuda",
-          "colecao": "Salvia",
-          "bordado": "Não",
-          "estampa": "Sim"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "nome": "Cravo",
-      "responsavel": "Beatriz Ceschini",
-      "estacao": "Verão",
-      "marca": "Lewis",
-      "orcamento": 7000,
-      "ano": 2024,
-      "modelos": [
-        {
-          "id": 552542,
-          "nome": "Modelo 1",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Camisa",
-          "colecao": "Cravo",
-          "bordado": "Não",
-          "estampa": "Sim"
-        },
-        {
-          "id": 6257423,
-          "nome": "Modelo 2",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Cravo",
-          "bordado": "Sim",
-          "estampa": "Não"
-        },
-        {
-          "id": 747525,
-          "nome": "Modelo 3",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Bermuda",
-          "colecao": "Cravo",
-          "bordado": "Sim",
-          "estampa": "Não"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "nome": "Violeta",
-      "responsavel": "Beatriz Ceschini",
-      "estacao": "Verão",
-      "marca": "Lewis",
-      "orcamento": 6870,
-      "ano": 2024,
-      "modelos": [
-        {
-          "id": 543253,
-          "nome": "Modelo 1",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Camisa",
-          "colecao": "Violeta",
-          "bordado": "Sim",
-          "estampa": "Não"
-        },
-        {
-          "id": 6255,
-          "nome": "Modelo 2",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Violeta",
-          "bordado": "Sim",
-          "estampa": "Não"
-        },
-        {
-          "id": 7252,
-          "nome": "Modelo 3",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Bermuda",
-          "colecao": "Violeta",
-          "bordado": "Não",
-          "estampa": "Sim"
         }
       ]
     },
@@ -248,26 +96,6 @@
       "modelos": []
     },
     {
-      "id": 88,
-      "nome": "Mar",
-      "responsavel": "Beatriz Ceschini",
-      "marca": "Dammyler",
-      "estacao": "Verão",
-      "ano": 2025,
-      "orcamento": 9400,
-      "modelos": [
-        {
-          "id": 6684,
-          "nome": "Ret",
-          "responsavel": "Beatriz Ceschini",
-          "tipo": "Boné",
-          "colecao": "Mar",
-          "bordado": "sim",
-          "estampa": "não"
-        }
-      ]
-    },
-    {
       "id": 32,
       "nome": "Rose",
       "responsavel": "Beatriz Ceschini",
@@ -278,31 +106,91 @@
       "modelos": []
     },
     {
-      "id": 836,
-      "nome": "Ouija",
+      "id": 6,
+      "nome": "Violeta",
       "responsavel": "Beatriz Ceschini",
-      "marca": "Dammyler",
-      "estacao": "Primavera",
+      "estacao": "Verão",
+      "marca": "Lewis",
+      "orcamento": 6870,
       "ano": 2024,
-      "orcamento": 7860,
       "modelos": [
         {
-          "id": 526,
-          "nome": "Pantalona",
+          "id": 6255,
+          "nome": "Flare",
           "responsavel": "Beatriz Ceschini",
           "tipo": "Calça",
-          "colecao": "Ouija",
+          "colecao": "Violeta",
           "bordado": "sim",
           "estampa": "não"
         },
         {
-          "id": 526,
-          "nome": "Pantalona",
+          "id": 7252,
+          "nome": "Destroyed",
           "responsavel": "Beatriz Ceschini",
-          "tipo": "Calça",
-          "colecao": "Ouija",
+          "tipo": "Bermuda",
+          "colecao": "Violeta",
+          "bordado": "sim",
+          "estampa": "não"
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "nome": "Mar",
+      "responsavel": "Beatriz Ceschini",
+      "marca": "Dammyler",
+      "estacao": "Verão",
+      "ano": 2025,
+      "orcamento": 9400,
+      "modelos": [
+        {
+          "id": 2211,
+          "nome": "Tomara-que-caia",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Biquíni",
+          "colecao": "Mar",
           "bordado": "sim",
           "estampa": "sim"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Hera",
+      "responsavel": "Beatriz Ceschini",
+      "estacao": "Verão",
+      "marca": "Lewis",
+      "orcamento": 5000,
+      "ano": 2024,
+      "modelos": [
+        {
+          "id": 71841,
+          "nome": "Destroyed",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Bermuda",
+          "colecao": "Hera",
+          "bordado": "não",
+          "estampa": "sim"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "nome": "Cravo",
+      "responsavel": "Beatriz Ceschini",
+      "estacao": "Verão",
+      "marca": "Lewis",
+      "orcamento": 7000,
+      "ano": 2024,
+      "modelos": [
+        {
+          "id": 6257423,
+          "nome": "Modelo 2",
+          "responsavel": "Beatriz Ceschini",
+          "tipo": "Calça",
+          "colecao": "Cravo",
+          "bordado": "Sim",
+          "estampa": "Não"
         }
       ]
     }

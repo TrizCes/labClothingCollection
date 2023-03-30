@@ -20,12 +20,12 @@
     Editar Modelo
   </h2>
   <div class="card col d-flex justify-content-around mt-3 ms-2 pb-4 border-0 me_small">
-    <app-form-modelo class="d-flex col-12 justify-content-around" (salvaModelo)="salvaModelo($event)"></app-form-modelo>
-    <div class="d-flex justify-content-between col-12 mt-3 ms-5 me-5">
+    <app-form-modelo class="d-flex col-12 justify-content-around" (salvaModelo)="salvaModelo($event)" (alterarModelo)="alterar($event)" (deletarModelo)="deletar($event)"></app-form-modelo>
+    <div class="d-flex justify-content-between col-12 mt-3 me-5">
       <div class="d-flex justify-content-start col-4 ms-5">
-        <button class="btn btn-danger w-30" ngbPopover="Deletar a coleção também excluirá todos os modelos pertencentes a ela."
+        <button class="btn btn-danger w-30" ngbPopover="A opção não poderá ser desfeita."
         triggers="mouseenter:mouseleave"
-        popoverTitle="Atenção!" (click)="deletar()">
+        popoverTitle="Atenção!"(click)="formModelo.deletar()">
           Deletar
         </button>
       </div>
@@ -33,7 +33,7 @@
         <button class="btn btn-light me-5 w-30" [routerLink]="['../../../modelos']">
         Cancelar
       </button>
-      <button class="btn btn-primary w-30" (click)="formModelo.salva()">
+      <button class="btn btn-primary w-30" (click)="formModelo.alterar()">
         Alterar
       </button>
       </div>

@@ -58,30 +58,89 @@ export class ModelosService {
     }
   }
 
-  async cadastrarModelo(modelo: IModelos): Promise<void>{
+  async cadastrarModelo(modelo: IModelos): Promise<void> {
     let colecaoNome = modelo.colecao;
-    try{
+    try {
       const lista = await this.listaColecoes().toPromise();
       if (lista) {
-        lista.forEach(colecao => {
-          if(colecao.nome === colecaoNome){
+        lista.forEach((colecao) => {
+          if (colecao.nome === colecaoNome) {
             colecao.modelos.push(modelo);
             let id = colecao.id;
-            this._httpClient.patch<IColecoes>(`${API_PATH}/colecoes/${id}`, colecao).subscribe(
-              () => {console.log('Success'), window.alert('Cadastro de modelo realizado!')},
-              (error: any) => console.error('Error:', error));
+            this._httpClient
+              .put<IColecoes>(`${API_PATH}/colecoes/${id}`, colecao)
+              .subscribe(
+                () => {
+                  console.log('Success'),
+                    window.alert('Cadastro de modelo realizado!');
+                },
+                (error: any) => console.error('Error:', error)
+              );
           }
-        })
+        });
       }
-    }catch(e){
+    } catch (e) {
       console.log(e);
     }
   }
 
-  async deletarModelo(id: number){
-    try{
-    }catch(e){
-        console.log(e);
+  async deletarModelo(modelo: IModelos) {
+    try {
+      const lista = await this.listaColecoes().toPromise();
+      if (lista) {
+        lista.forEach((colecao) => {
+          if (colecao.nome === modelo.colecao) {
+            for (let i = 0; i < colecao.modelos.length; i++) {
+              if (colecao.modelos[i].id === modelo.id) {
+                colecao.modelos.splice(i, 1);
+                this._httpClient
+                  .delete<IColecoes>(`${API_PATH}/colecoes/${colecao.id}`)
+                  .subscribe(
+                    () => {
+                      console.log('Success'), window.alert('Modelo deletado!');
+                    },
+                    (error: any) => console.error('Error:', error)
+                  );
+                  this._httpClient.post<IColecoes>(`${API_PATH}/colecoes`, colecao).subscribe(
+                    () => {console.log('Success')},
+                    (error: any) => console.error('Error:', error));
+              }
+            }
+          }
+        });
       }
+    } catch (e) {
+      console.log(e);
+    }
   }
+
+  async alterarModelo(modelo: IModelos): Promise<void> {
+    try {
+      const lista = await this.listaColecoes().toPromise();
+      if (lista) {
+        lista.forEach((colecao) => {
+          if (colecao.nome === modelo.colecao) {
+            for (let i = 0; i < colecao.modelos.length; i++) {
+              if (colecao.modelos[i].id === modelo.id) {
+                colecao.modelos.splice(i, 1);
+                colecao.modelos.push(modelo);
+                this._httpClient
+                  .put<IColecoes>(`${API_PATH}/colecoes/${colecao.id}`, colecao)
+                  .subscribe(
+                    () => {
+                      console.log('Success'),
+                        window.alert('Atualização de modelo realizada!');
+                    },
+                    (error: any) => console.error('Error:', error)
+                  );
+              }
+            }
+          }
+        });
+      }
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
 }
