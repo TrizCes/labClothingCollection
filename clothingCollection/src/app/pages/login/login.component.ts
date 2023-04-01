@@ -10,6 +10,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class LoginComponent implements OnInit  {
   loginForm!: FormGroup;
+  erroLogin: boolean = false;
 
   constructor(private fb: FormBuilder, private _authService: AuthService) { }
 
@@ -28,6 +29,7 @@ export class LoginComponent implements OnInit  {
   logar(){
     if (!this.loginForm.valid) {
       console.error("Erro em logar");
+      this.erroLogin = true;
       return;
     }
     console.log('Logando')

@@ -22,7 +22,7 @@
           "id": 11548,
           "nome": "Moletom com Estampa",
           "responsavel": "Beatriz Ceschini",
-          "tipo": "Moletom",
+          "tipo": "Calça",
           "colecao": "Zamioculca",
           "bordado": "não",
           "estampa": "sim"
@@ -271,15 +271,6 @@
     },
     {
       "id": 9169,
-      "usuario": "teste01",
-      "empresa": "Audaces",
-      "email": "teste01@email.com",
-      "senha": "12345678",
-      "confirmeSenha": "12345678",
-      "cnpj": 456984569845
-    },
-    {
-      "id": 9170,
       "usuario": "teste01",
       "empresa": "Audaces",
       "email": "teste01@email.com",

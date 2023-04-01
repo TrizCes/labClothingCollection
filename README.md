@@ -14,9 +14,9 @@ O software possui páginas para gerenciamento de coleções de moda e dos modelo
 - Angular CLI (v15.1.5 ou superior). Clique [aqui](https://angular.io/cli) para mais informações.
 
 - Instalar o plugin `json-server` para rodar a API Fake `db.json`;
-Para executar a API Fake, utilizamos o comando **json-server --watch db.json** .
-É necessário rodar o arquivo na porta 3000 (localhost:3000).
-Clique [aqui](https://www.fabricadecodigo.com/json-server/) para mais informações.
+  Para executar a API Fake, utilizamos o comando **json-server --watch db.json** .
+  É necessário rodar o arquivo na porta 3000 (localhost:3000).
+  Clique [aqui](https://www.fabricadecodigo.com/json-server/) para mais informações.
 
 - Instalar o ngBootStrap com auxilio do Angular CLI, através do comando:
   `ng add @ng-bootstrap/ng-bootstrap`.
@@ -48,4 +48,4 @@ Os dados necessários para execução do projeto estão salvos no arquivo db.jso
 ## Mais informações
 
 - Trilha de desenvolvimento: [Trello](https://trello.com/invite/b/ILDYywPg/ATTIcc7c1ff5277263bdb2424aad84b7c7cbE1EC3B4C/projeto-avaliativo-modulo-1)
-- Video de apresentação [aqui]()
+- Video de apresentação [aqui](https://drive.google.com/drive/folders/14eh1mYzcmAFrYJtQNvvaa-OaVWuGVkGf?usp=sharing)

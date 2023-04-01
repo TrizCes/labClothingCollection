@@ -31,6 +31,13 @@
             formControlName="senha"
           />
         </div>
+        <div *ngIf="erroLogin === true">
+          <p>
+            <ngb-alert type="primary" [dismissible]="false">
+              Os dados inseridos não conferem. Tente novamente.
+            </ngb-alert>
+          </p>
+        </div>
         <div class="mb-3">
           <button type="submit" class="btn btn-primary col-lg-12">
             Entrar
