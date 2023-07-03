@@ -47,5 +47,4 @@ Os dados necessários para execução do projeto estão salvos no arquivo db.jso
 
 ## Mais informações
 
-- Trilha de desenvolvimento: [Trello](https://trello.com/invite/b/ILDYywPg/ATTIcc7c1ff5277263bdb2424aad84b7c7cbE1EC3B4C/projeto-avaliativo-modulo-1)
 - Video de apresentação [aqui](https://drive.google.com/drive/folders/14eh1mYzcmAFrYJtQNvvaa-OaVWuGVkGf?usp=sharing)
